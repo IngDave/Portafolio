@@ -1,2 +1,2 @@
 # Portafolio
- Portafolio de presentacion profesional
+ Portafolio de presentación profesional y de conocimientos.
