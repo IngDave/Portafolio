@@ -1,3 +1,40 @@
-body{
-background-color: #1A324B;
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --background-color: #183149;
+}
+
+body {
+    background: var(--background-color);
+    color: #f6f6f6;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.main {
+    margin: 2% 10% 2% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main .main__description {
+    .main__strong {
+        font-size: 5pc;
+        font-family: 'Gill Sans';
+        border: 20px #1A324B;
+    }
+
+}
+
+.main .main__description .main__span {
+    color: #ffffff;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+    padding: 10px;
+    line-height: 3;
+
 }
