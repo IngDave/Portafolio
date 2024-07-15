@@ -1,17 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
 :root {
-    --background-color: #183149;
+    --background: #193248;
+    --rubik:"Rubik", sans-serif;
+    --archivo:"Archivo", sans-serif;
+    font-size: 20px;
 }
 
 body {
-    background: var(--background-color);
-    color: #f6f6f6;
+    background: var(--background);
+    color: white;
     height: 100vh;
     box-sizing: border-box;
+}
+
+.header,.footer {
+    text-align: center;
 }
 
 .main {
@@ -21,20 +32,74 @@ body {
     justify-content: space-between;
 }
 
-.main .main__description {
-    .main__strong {
-        font-size: 5pc;
-        font-family: 'Gill Sans';
-        border: 20px #1A324B;
-    }
+.main__descriptionUno {
+    font-size: 70px;
+}
+
+.main__span {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Roboto";
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 3;
+}
+.main__descriptionDos{
+    font-family: var(--archivo);
+    padding:20px 0px 20px 0px;
+}
+
+.profilePhoto {
+    width: 540px;
+    height: 530px;
 
 }
 
-.main .main__description .main__span {
+.main__redes {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    background-color: #16242d;
+    border-radius: 25px;
+    font-family: var(--rubik); 
+    
+}
+.main__redes__linkedin {
+    width: 280px;
+    padding: 21.5px;
+    text-align: center;
     color: #ffffff;
     font-size: 20px;
-    border: 2px solid #ffffff;
-    padding: 10px;
-    line-height: 3;
+    text-decoration: none;
+     
+    
+}
+.main__redes__linkedin:hover {
+    background-color: var(--background);
+    font-size: 20px;
+    text-decoration: none;
+}
+.main__redes__logolinkedin{
+    width: 50px;
+    height: 50px;
+}
 
+.main__redes__github {
+    width: 280px;
+    padding: 21.5px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.main__redes__github:hover {
+    background-color: var(--background);
+    font-size: 20px;
+    text-decoration: none;
+}
+.main__redes__logogithub{
+    width: 50px;
+    height: 50px;
 }
