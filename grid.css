@@ -1,0 +1,57 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    background: var(--background);
+    color: white;
+    min-height: 100%;
+}
+
+.grid__header{
+    grid-area: header;
+
+}
+
+.grid__Uno{
+    grid-area: sectionUno;
+   
+}
+.grid__Dos{
+    grid-area: sectionDos;
+   
+}
+.grid__Tres{
+    grid-area: sectionTres;
+   
+}
+.grid__footer{
+    grid-area: footer;  
+
+}
+.grid__container{
+    display: grid;
+    gap:10px;
+    grid-template-areas: 
+    "header"
+    "sectionUno"
+    "sectionTres"
+    "sectionDos"
+    "footer";
+}
+
+@media(min-width: 600px){
+    .grid__container{
+    grid-template:
+    "header header"
+    "sectionUno sectionTres"
+    "sectionDos sectionDos" 
+    "footer footer";
+    }
+}

@@ -2,104 +2,104 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 :root {
     --background: #193248;
-    --rubik:"Rubik", sans-serif;
-    --archivo:"Archivo", sans-serif;
+    --rubik: "Rubik", sans-serif;
+
+    --archivo: "Archivo", sans-serif;
     font-size: 20px;
 }
 
-body {
-    background: var(--background);
-    color: white;
-    height: 100vh;
-    box-sizing: border-box;
-}
-
-.header,.footer {
+.grid__header {
     text-align: center;
+    font-size: 100px;
 }
 
-.main {
-    margin: 2% 10% 2% 10%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.grid__Uno {
+    padding: 100px 10px 0px 100px;
+
+    .descriptionUno {
+        font-size: 70px;
+    }
+
+    .span {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "Roboto";
+        border: 2px solid #ffffff;
+        border-radius: 10px;
+        padding: 10px;
+        line-height: 3;
+    }
+
+    .descriptionDos {
+        font-family: var(--archivo);
+        padding: 20px 0px 20px 0px;
+    }
 }
 
-.main__descriptionUno {
-    font-size: 70px;
-}
-
-.main__span {
-    color: #ffffff;
-    font-size: 20px;
-    font-family: "Roboto";
-    border: 2px solid #ffffff;
-    border-radius: 10px;
-    padding: 10px;
-    line-height: 3;
-}
-.main__descriptionDos{
-    font-family: var(--archivo);
-    padding:20px 0px 20px 0px;
-}
-
-.profilePhoto {
-    width: 540px;
-    height: 530px;
-
-}
-
-.main__redes {
+.grid__Dos {
     display: flex;
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
     background-color: #16242d;
     border-radius: 25px;
-    font-family: var(--rubik); 
-    
-}
-.main__redes__linkedin {
-    width: 280px;
-    padding: 21.5px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
-     
-    
-}
-.main__redes__linkedin:hover {
-    background-color: var(--background);
-    font-size: 20px;
-    text-decoration: none;
-}
-.main__redes__logolinkedin{
-    width: 50px;
-    height: 50px;
+    font-family: var(--rubik);
+
+    .redes__linkedin {
+        width: 280px;
+        padding: 21.5px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .redes__linkedin:hover {
+        background-color: var(--background);
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .logo__linkedin {
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    .redes__github {
+        width: 280px;
+        padding: 21.5px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .redes__github:hover {
+        background-color: var(--background);
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .logo__github {
+        width: 50px;
+        height: 50px;
+    }
 }
 
-.main__redes__github {
-    width: 280px;
-    padding: 21.5px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 20px;
-    text-decoration: none;
+.grid__Tres {
+    padding: 5px 40px 20px 100px;
+
+    .profilePhoto {
+        width: 540px;
+        height: 530px;
+
+    }
+
 }
 
-.main__redes__github:hover {
-    background-color: var(--background);
-    font-size: 20px;
-    text-decoration: none;
-}
-.main__redes__logogithub{
-    width: 50px;
-    height: 50px;
+.grid__footer {
+    text-align: center;
+    font-size: 100px;
 }
