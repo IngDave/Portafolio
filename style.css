@@ -3,103 +3,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
-    --background: #193248;
+    
     --rubik: "Rubik", sans-serif;
-
     --archivo: "Archivo", sans-serif;
-    font-size: 20px;
+    --roboto: "Roboto", sans-serif;
 }
 
-.grid__header {
+.header {
     text-align: center;
-    font-size: 100px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }
 
-.grid__Uno {
-    padding: 100px 10px 0px 100px;
-
-    .descriptionUno {
-        font-size: 70px;
-    }
-
-    .span {
-        color: #ffffff;
-        font-size: 20px;
-        font-family: "Roboto";
-        border: 2px solid #ffffff;
-        border-radius: 10px;
-        padding: 10px;
-        line-height: 3;
-    }
-
-    .descriptionDos {
-        font-family: var(--archivo);
-        padding: 20px 0px 20px 0px;
-    }
+.main__container {
+    color: white;
+    background: linear-gradient(90deg, #000000 0%, hsl(208, 48%, 19%) 18%, hsl(208, 48%, 19%) 84%,#193248 100%);
 }
 
-.grid__Dos {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 0px 20px 0px;
-    background-color: #16242d;
-    border-radius: 25px;
+.main__container .item__lefts {
+    border: 1px solid white;
+}
+
+.main__container .lefts__text {
+    font-family: var(--);
+    font-size: 3rem;
+    
+}
+.main__container .lefts__paragrafo{
+    border: 1px solid white;
+    padding: 1rem 0rem 3rem 0rem;
+    font-size: 2rem;
+    font-family: var(--roboto);
+}
+
+.lefts__text__strong {
     font-family: var(--rubik);
-
-    .redes__linkedin {
-        width: 280px;
-        padding: 21.5px;
-        text-align: center;
-        color: #ffffff;
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    .redes__linkedin:hover {
-        background-color: var(--background);
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    .logo__linkedin {
-        width: 50px;
-        height: 50px;
-        
-    }
-
-    .redes__github {
-        width: 280px;
-        padding: 21.5px;
-        text-align: center;
-        color: #ffffff;
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    .redes__github:hover {
-        background-color: var(--background);
-        font-size: 20px;
-        text-decoration: none;
-    }
-
-    .logo__github {
-        width: 50px;
-        height: 50px;
-    }
+    font-size: 4.5rem;
 }
 
-.grid__Tres {
-    padding: 5px 40px 20px 100px;
-
-    .profilePhoto {
-        width: 540px;
-        height: 530px;
-
-    }
-
+.main__container .item__rights {
+    border: 1px solid white;
 }
 
-.grid__footer {
+.main__container .item__rights .rights__image {
+    height: 400px;
+
+}
+.footer {
     text-align: center;
-    font-size: 100px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 }

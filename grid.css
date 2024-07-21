@@ -1,57 +1,79 @@
-* { 
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html{
+html {
     height: 100%;
 }
 
 body {
-    background: var(--background);
+    background: var();
+    background-size: cover;
     color: white;
-    min-height: 100%;
 }
 
-.grid__header{
+.header {
     grid-area: header;
 
 }
 
-.grid__Uno{
-    grid-area: sectionUno;
-   
+.item__rights {
+    display: flexbox;
+    grid-area: rights;    
 }
-.grid__Dos{
-    grid-area: sectionDos;
-   
-}
-.grid__Tres{
-    grid-area: sectionTres;
-   
-}
-.grid__footer{
-    grid-area: footer;  
 
+.rights__image{
+    padding:10%;
+    border: 1px solid white;
 }
-.grid__container{
+.item__lefts {
+    padding: 1rem;
+    grid-area: lefts; 
+text-align: center;
+}
+.main__container {
     display: grid;
-    gap:10px;
-    grid-template-areas: 
-    "header"
-    "sectionUno"
-    "sectionTres"
-    "sectionDos"
-    "footer";
+    gap: 1rem;
+    padding: 30px;
+    grid-template-areas:
+        "header"
+        "rights"
+        "lefts"
+        "footer"; 
+}
+@media(min-width:600px) {
+    .main__container {
+        grid-template-areas:
+            "header"
+            "rights"
+            "lefts"
+            "footer";
+    }
+
+    body{
+        background-color: aqua;
+    }
+}
+@media(min-width:900px) {
+    .main__container {
+        display: grid;
+        gap: 1rem;
+        padding: 30px;
+        text-align: center;
+        justify-content: center;
+        grid-template-areas:
+            "header header"
+            "lefts rights"
+            "footer footer";
+    }
+
+    body{
+        background-color: rgb(129, 179, 22);
+    }
 }
 
-@media(min-width: 600px){
-    .grid__container{
-    grid-template:
-    "header header"
-    "sectionUno sectionTres"
-    "sectionDos sectionDos" 
-    "footer footer";
-    }
+.footer {
+    grid-area: footer;
 }
