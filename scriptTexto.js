@@ -1,13 +1,13 @@
-const div = document.querySelector(".lefts__paragrafo"),
-    lefts__paragrafo = "Ingeniero de Software";
+const div = document.querySelector(".about__script__Texto"),
+    about__script__Texto = "{ Ingeniero de Software }";
 
 function efectoTextTyping(elemento, texto, i = 0) {
     elemento.textContent += texto[i];
 
-    if (i === lefts__paragrafo.length - 1) return;
+    if (i === about__script__Texto.length - 1) return;
 
-    setTimeout(() => efectoTextTyping(div, lefts__paragrafo, i + 1), 120);
+    setTimeout(() => efectoTextTyping(div, about__script__Texto, i + 1), 120);
 
 }
 
-efectoTextTyping(div, lefts__paragrafo);
+efectoTextTyping(div, about__script__Texto);

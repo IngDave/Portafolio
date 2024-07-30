@@ -4,29 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Ing.ro Tejada </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portafolio | Inicio </title>
     <link rel="stylesheet" href="grid.css">
     <link rel="icon" href="picture/image/android-icon-36x36.png">
 </head>
 
 <body>
-    <header class="header">header</header>
 
-    <main class="main__container">
-        <aside class="item__lefts">
-            <h1 class="lefts__text">Hola, soy <strong class="lefts__text__strong"><br> David Tejada Vargas</strong></h1>
-            <div class="lefts__paragrafo"></div>
-            <p>Sólida formación académica poseo experiencia en desarrollo web y programación basica.</p>
-        </aside>
+    <header class="header">
+        <!--sidenav-->
+        <div class="sidenav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
 
-        <aside class="item__rights">
-            <center><img class="rights__image" src="/picture/image/bitmap.png" alt="profile photo"></center>
-        </aside>
-       
+    <main class="container">
+        <!--description-->
+        <section id="about" class="about">
+            <div class="about__Texto">
+                <h1 class="about__text__Uno">Hola, soy <strong class="text__Strong"><br> David Tejada</strong></h1>
+                <div class="about__script__Texto"></div>
+                <p class="about__text__Dos">Con sólida formación académica, experiencia en desarrollo web y
+                    programación
+                    basica.</p>
+            </div>
+            <!--Foto-->
+            <div class="img__Perfil">
+                <img class="about__img__Perfil" src="/picture/image/bitmap.png" alt="profile photo">
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <div class="services__data">
+                <h1>Servicios</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla qui autem ex, fuga harum itaque
+                    recusandae, omnis asperiores accusamus incidunt praesentium blanditiis necessitatibus rerum placeat
+                    iure ad possimus labore mollitia.</h3>
+            </div>
+            <div class="services__data">
+                <h1>Servicios</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, temporibus exercitationem qui,
+                    ad cumque mollitia aspernatur corrupti voluptatum soluta nobis autem odio veniam ipsa recusandae
+                    animi! Nihil libero quam ipsum? </h3>
+            </div>
+            <div class="services__data">
+                <h1>Servicios</h1>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, fuga earum numquam assumenda
+                    nesciunt nihil fugit iusto quos totam impedit libero, voluptate doloribus molestias ipsam voluptas
+                    praesentium unde minus. Eum. </h3>
+            </div>
+            <div class="services__data">
+                <h1>Servicios</h1>
+                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias distinctio mollitia quae ad sit
+                    fugit quas minus doloremque? Voluptas nemo accusamus consequuntur molestiae ab error voluptate
+                    aperiam placeat tenetur reprehenderit?</h3>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="projects__data">
+                <h1>PROYECTO 1</h1>
+            </div>
+            <div class="projects__data">
+                <h1>PROYECTO 2</h1>
+            </div>
+            <div class="projects__data">
+                <h1>PROYECTO 3</h1>
+            </div>
+            <div class="projects__data">
+                <h1>PROYECTO 4</h1>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+
+            <h1>Quedo a su disposición para proporcionar más información o para una
+                entrevista donde podamos explorar en detalle cómo puedo aportar valor a su
+                organización. </h1>
+
+            <div class="contact__sendMail">
+                <style>
+                   
+                    input[type=text],
+                    select,
+                    textarea {
+                        width: 70%;
+                        padding: 12px;
+                        border: 1px solid #ccc;
+                        border-radius: 4px;
+                        resize: vertical;
+                    }
+
+                    label {
+                        padding: 12px 0px 12px 0px;
+                        display: inline-block;
+                    }
+
+                    input[type=submit] {
+                        background-color: #04AA6D;
+                        color: white;
+                        padding: 12px 20px;
+                        border: none;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        float: right;
+                    }
+
+                    input[type=submit]:hover {
+                        background-color: #45a049;
+                    }
+                    .container {
+                        border-radius: 5px;
+                        background-color: #f2f2f2;
+                        padding: 20px;
+                    }
+                    .col-25 {
+                        float: left;
+                        width: 10%;
+                        margin-top: 6px;
+                    }
+                    .col-75 {
+                        float: left;
+                        width: 75%;
+                        margin-top: 6px;
+                    }
+                    /* Clear floats after the columns */
+                    .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+
+                    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+                    @media screen and (max-width: 600px) {
+
+                        .col-25,
+                        .col-75,
+                        input[type=submit] {
+                            width: 100%;
+                            margin-top: 0;
+                        }
+                    }
+                </style>
+                </head>
+
+                    <div class="container">
+                        <form action="/action_page.php">
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="fname">First Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="lname">Last Name</label>
+                                </div>
+                                <div class="col-75">
+                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="country">Country</label>
+                                </div>
+                                <div class="col-75">
+                                    <select id="country" name="country">
+                                        <option value="australia">Australia</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="usa">USA</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-25">
+                                    <label for="subject">Subject</label>
+                                </div>
+                                <div class="col-75">
+                                    <textarea id="subject" name="subject" placeholder="Write something.."
+                                        style="height:200px"></textarea>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <input type="submit" value="Submit">
+                            </div>
+                        </form>
+                    </div>
+            </div>
+            <div>
+                <a href="#" class="contact__Redes"><img src="/picture/linkedin.png" alt="icon LinkedIn"> LinkedIn</a>
+                <a href="#" class="contact__Redes"><img src="/picture/github.png" alt="icon Github">Github</a>
+
+            </div>
+        </section>
+
     </main>
-
-    <footer class="footer"> footer </footer>
     <script src="scriptTexto.js"></script>
 </body>
 

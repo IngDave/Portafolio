@@ -1,3 +1,10 @@
+
+
+:root {
+    --background: linear-gradient(90deg, black 2%, #193248 70%, #193248 90%);
+    --SulphurPoint: "Sulphur Point", sans-serif; 
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,75 +12,182 @@
 }
 
 html {
-    height: 100%;
+    
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
-body {
-    background: var();
-    background-size: cover;
+section {
+    height: 48.4em;
+    text-align: center;
     color: white;
+    
 }
 
-.header {
-    grid-area: header;
+/* The sidebar menu */
+
+.sidenav {
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--rubik);
+    background-color: #000000;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 2em;
+    padding: 0.25em 1em 0.25em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
 
 }
 
-.item__rights {
-    display: flexbox;
-    grid-area: rights;    
+.sidenav a:hover {
+    background-color: #193248;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 0px 8px 0px;
+    font-family: bold var(--rubik);
+
+}/*fin de sidenav*/
+
+.container { /* contenedor de paginas*/
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+    background: var(--background);
+    border: 1px solid rgb(255, 255, 255);
+    
 }
 
-.rights__image{
-    padding:10%;
-    border: 1px solid white;
-}
-.item__lefts {
-    padding: 1rem;
-    grid-area: lefts; 
-text-align: center;
-}
-.main__container {
-    display: grid;
-    gap: 1rem;
-    padding: 30px;
-    grid-template-areas:
-        "header"
-        "rights"
-        "lefts"
-        "footer"; 
-}
-@media(min-width:600px) {
-    .main__container {
-        grid-template-areas:
-            "header"
-            "rights"
-            "lefts"
-            "footer";
-    }
-
-    body{
-        background-color: aqua;
-    }
-}
-@media(min-width:900px) {
-    .main__container {
-        display: grid;
-        gap: 1rem;
-        padding: 30px;
-        text-align: center;
-        justify-content: center;
-        grid-template-areas:
-            "header header"
-            "lefts rights"
-            "footer footer";
-    }
-
-    body{
-        background-color: rgb(129, 179, 22);
-    }
+.about {/*primera pagina*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 3em;
+    border: 1px solid rgb(255, 255, 255);
+    
 }
 
-.footer {
-    grid-area: footer;
+.about__text__Uno {
+    font-size: 1rem;
+    text-align: left;
+    padding: 0rem 0rem 0rem 9rem;
+    font-family: var(--SulphurPoint);
+}
+
+.text__Strong {
+    font-size: 1rem;
+}
+
+.about__script__Texto {
+    font-family: var(--roboto);
+    text-align: left;
+    font-size: 1em;
+    padding: 0rem 0rem 0rem 9.3rem;
+}
+
+.about__text__Dos {
+    font-size: 1em;
+    text-align: left;
+    padding: 2rem 0rem 2rem 9.3rem;
+    font-family: var(--rubik);
+}
+
+.img__Perfil {
+    width: 50%;
+    max-width: 500px;
+    min-width: 320px;
+    margin:0;   
+}
+
+.about__img__Perfil {
+    width: 360px;
+    height: 340px;
+    
+}
+
+.services{ /*segunda pagina*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ffffff;
+    gap:30px;
+    padding: 0em 2em 0em;
+}
+.services__data{
+    
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #b60a0a;
+}
+
+.projects{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ffffff;
+    gap:30px;
+    padding: 0em 2em 0em;
+    border: 1px solid rgb(255, 255, 255);/*borra*/
+}
+
+.projects__data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #b60a0a;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: 1px solid #b60a0a;
+}
+
+.contact h1{
+    text-align: center;
+    margin: 0px 200px;
+    font-family: var(--SulphurPoint);
+}
+.contact a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    gap: 1em;
+    padding: .5em;
+}
+
+.contact img{
+    width: 30px;
+}
+
+.contact__sendMail{
+
+}
+
+
+
+.header {grid-area: header;}
+.about {grid-area: about;}
+.services {grid-area: services;}
+.proyects {grid-area: proyects;}
+.contact {grid-area: contact;}
+
+@media screen {
+    /**/
 }
