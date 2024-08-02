@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 :root {
     --background: linear-gradient(90deg, black 2%, #193248 70%, #193248 90%);
     --SulphurPoint: "Sulphur Point", sans-serif;
+    --Poppins: "Poppins", sans-serif;
 }
 
 * {
@@ -30,7 +35,6 @@ section {
 }
 
 /* The sidebar menu */
-
 .sidenav {
     height: 100%;
     position: fixed;
@@ -57,15 +61,13 @@ section {
 }
 
 .sidenav a:hover {
-    background-color: #193248;
+    background: var(--background);
     border-radius: 5px;
     margin: 5px;
     padding: 0px 8px 0px;
     font-family: bold var(--rubik);
 
-}
-
-/*fin de sidenav*/
+}/*fin de sidenav*/
 
 .container {
     /* contenedor de paginas*/
@@ -73,7 +75,7 @@ section {
     flex-direction: column;
     margin-left: 140px;
     background: var(--background);
-    
+
 
 }
 
@@ -83,19 +85,18 @@ section {
     justify-content: space-evenly;
     align-items: center;
     margin-left: 3em;
-    
-
 }
 
 .about__text__Uno {
     font-size: 3em;
     text-align: left;
     padding: 0rem 0rem 0rem 9rem;
-    font-family: var(--SulphurPoint);
+    font-family: var(--Poppins);
 }
 
 .text__Strong {
     font-size: 1.5em;
+
 }
 
 .about__script__Texto {
@@ -125,23 +126,34 @@ section {
 
 }
 
-.about .contact__Redes{
-    display: flex;
+.about .contact__Redes {
     gap: .5em;
     padding: 0.5em 0em;
+    text-align: left;
+    margin-left: 9em;
+}
+
+.about .contact__Redes__a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #ffffff;
     text-decoration: none;
-    
+    font-family: var(--Poppins);
+
 }
 
-.about .img__Redes{
-    height: 25px ;
-    margin-left: 9em;
-        
+.about .img__LinkedIn {
+    height: 30px;
 }
 
+.about .img__Github {
+    height: 45px;
+}
+
+/*segunda pagina*/
 .services {
-    /*segunda pagina*/
+    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -156,13 +168,14 @@ section {
     border: 1px solid #b60a0a;
 }
 
+/*tercera pagina*/
 .projects {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 30px;
     padding: 0em 2em 0em;
-   
+
 }
 
 .projects__data {
@@ -172,19 +185,15 @@ section {
     border: 1px solid #b60a0a;
 }
 
-/*section de contacto*/
+/*cuarta pagina*/
 .contact {
     margin-left: 3em;
-    
-}
 
-.form__Contenido {
-    /**/
 }
 
 .contact h1 {
-    font-family: var(--SulphurPoint);
-    padding: 2em 0em 2em;
+    font-family: var(--Poppins);
+    padding: 1.5em 0em 1em;
 }
 
 .contact form {
@@ -194,14 +203,13 @@ section {
     align-items: center;
     background-color: #00000044;
     border-radius: 1.2em;
-    gap:0.2em;
+    padding: 2em;
 }
 
 .contact label {
     margin-bottom: .3em;
-    font-size: 1.5em;
-    
-
+    font-size: 1.3em;
+    font-family: var(--Poppins);
 }
 
 .contact input,
@@ -209,8 +217,8 @@ textarea {
     padding: .8em .8em;
     border: 0;
     font-size: 1em;
-    margin-bottom: 5px;
     border-radius: 10px;
+    font-family: monospace;
 
 }
 
@@ -220,35 +228,27 @@ textarea {
     color: white;
     cursor: pointer;
     transition: all .3s ease;
-    font-family: Impact, Haettenschweiler sans-serif;
+    font-family: var(--Poppins);
     font-size: 20px;
+    margin-top: 1em ;
 
 }
 
 .contact .submit:hover {
     background-color: #11f377;
-
-}
-
-.contact a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*color: #ffffff;*/
-    text-decoration: none;
-    gap: 1em;
-    padding: .5em;
 }
 
 .contact img {
     width: 30px;
 }
 
-:focus {
+input:focus {
     outline: 3px solid #10c05f;
 }
 
-.contact__sendMail {}
+textarea:focus {
+    outline: 3px solid #10c05f;
+}
 
 .header {
     grid-area: header;

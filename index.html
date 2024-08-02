@@ -30,12 +30,16 @@
                 <p class="about__text__Dos">Con sólida formación académica, experiencia en desarrollo web y
                     programación
                     basica.</p>
-                <a href="https://www.linkedin.com/in/datejad/" class="contact__Redes"><img class="img__Redes" src="linkedin.png" alt="icon LinkedIn"> LinkedIn</a>
-                <a href="https://github.com/IngDave" class="contact__Redes"><img class="img__Redes" src="github.png" alt="icon Github"> Github</a>
+                <div class="contact__Redes">
+                    <a class="contact__Redes__a" href="https://www.linkedin.com/in/datejad/"><img class="img__LinkedIn"
+                            src="linkedin.png" alt="icon LinkedIn"> LinkedIn</a>
+                    <a class="contact__Redes__a" href="https://github.com/IngDave"><img class="img__Github"
+                            src="/github.png" alt="icon Github"> Github</a>
+                </div>
             </div>
             <!--Foto-->
             <div class="img__Perfil">
-                <img class="about__img__Perfil" src="bitmap.png" alt="profile photo">
+                <img class="about__img__Perfil" src="bitmap.webp" alt="profile photo">
             </div>
         </section>
 
@@ -86,9 +90,10 @@
                 <h1>Me gustaria explorar en detalle cómo puedo aportar valor a tu
                     organización. </h1>
 
-                <form action="#"> <!--Consumir api para el form aqui-->
+                <form action="https://formsubmit.co/188418b3c0d46c9677b5396cf6a38bc2" method="POST">  <!--Consumir api para el form aqui-->
+                    
                     <label for="name">Nombre</label>
-                    <input id="name" placeholder="First Name" type="text" name="name">
+                    <input id="name" placeholder="full-name" type="text" name="name">
 
                     <label for="email">E-mail</label>
                     <input id="email" placeholder="name@correo.com" type="email" name="email">
@@ -97,18 +102,20 @@
                     <input id="asunto" placeholder="Asunto" type="subject" name="subject">
 
                     <label for="coments">Comentarios</label>
-                    <textarea id="coments" name="coments" cols="30" rows="5"></textarea>
+                    <textarea placeholder="Write something" id="coments" name="coments" cols="30" rows="5"></textarea>
 
-                    <input class="submit" type="submit" value="Enviar">
+                    <input id="btn_Submit" class="submit" type="submit" value="Enviar">
 
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/#contact">
+                    <input type="hidden" name="_captcha" id="name" value="false">
                 </form>
-
             </div>
-
         </section>
 
     </main>
     <script src="scriptTexto.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/alert.js"></script>
 </body>
 
 </html>
