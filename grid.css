@@ -29,7 +29,6 @@ body {
 
 section {
     height: 48.4em;
-    text-align: center;
     color: white;
 
 }
@@ -90,7 +89,7 @@ section {
 .about__text__Uno {
     font-size: 3em;
     text-align: left;
-    padding: 0rem 0rem 0rem 9rem;
+    padding: 0rem 0rem 1rem 9rem;
     font-family: var(--Poppins);
 }
 
@@ -103,13 +102,13 @@ section {
     font-family: var(--roboto);
     text-align: left;
     font-size: 2rem;
-    padding: 0rem 0rem 0rem 9.3rem;
+    padding: 0rem 0rem 3rem 9.3rem;
 }
 
 .about__text__Dos {
     font-size: 1.5em;
     text-align: left;
-    padding: 2rem 0rem 2rem 9.3rem;
+    padding: 1rem 0rem 2rem 9.3rem;
     font-family: var(--rubik);
 }
 
@@ -126,34 +125,31 @@ section {
 
 }
 
-.about .contact__Redes {
+.about .redes{
+    display: flex;
+    align-items: center;
     gap: .5em;
-    padding: 0.5em 0em;
     text-align: left;
-    margin-left: 9em;
+    margin-left: 9.1em;
+
+
 }
 
-.about .contact__Redes__a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about .about__Redes {
     color: #ffffff;
     text-decoration: none;
+    font-size: 1.1em;
     font-family: var(--Poppins);
-
+    padding-right: 1em;
 }
 
-.about .img__LinkedIn {
+.about .img__Redes {
     height: 30px;
-}
-
-.about .img__Github {
-    height: 45px;
+    padding-right: .5rem;
 }
 
 /*segunda pagina*/
 .services {
-    
     display: flex;
     justify-content: space-evenly;
     align-items: center;
