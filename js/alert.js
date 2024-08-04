@@ -1,6 +1,6 @@
 document.getElementById('btn_Submit').onclick = function () {
     Swal.fire({
-        position: "center",
+        position: "bottom-end",
         icon: "success",
         title: "Mensaje enviado",
         text: "¡Guardado exitosamente!",
@@ -8,6 +8,6 @@ document.getElementById('btn_Submit').onclick = function () {
         timer: 2500,
         timerProgressBar: true,
         backdrop: true,
-
+        toast: true
     })
 }

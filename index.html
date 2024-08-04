@@ -25,7 +25,7 @@
         <section id="about" class="about">
             <div class="about__Texto">
                 <p class="about__text__Uno">Hola, soy
-                <strong class="text__Strong"><br />David Tejada</strong>
+                    <strong class="text__Strong"><br />David Tejada</strong>
                 </p>
 
                 <div class="about__script__Texto"></div>
@@ -33,10 +33,12 @@
                     Con sólida formación académica, experiencia en desarrollo web y programación basica.
                 </p>
                 <div class="redes">
-                    <img class="img__Redes" src="linkedin.png" alt="icon LinkedIn" />
-                    <a class="about__Redes" href="https://www.linkedin.com/in/datejad/">LinkedIn</a>
-                    <img class="img__Redes" src="/github.png" alt="icon Github" />
-                    <a class="about__Redes" href="https://github.com/IngDave">Github</a>
+                    <a class="about__Redes__linkedin" href="https://www.linkedin.com/in/datejad/">LinkedIn
+                        <img class="img__Redes" src="linkedin.png" alt="icon LinkedIn" />
+                    </a>
+                    <a class="about__Redes__github" href="https://github.com/IngDave">Github
+                        <img class="img__Redes" src="/github.png" alt="icon Github" />
+                    </a>
                 </div>
             </div>
             <!--Foto-->
@@ -110,16 +112,16 @@
                     <!--Consumir api para el form aqui-->
 
                     <label for="name">Nombre</label>
-                    <input id="name" placeholder="full-name" type="text" name="name" />
+                    <input id="name" placeholder="Ej: John Wick" type="text" name="name" />
 
                     <label for="email">E-mail</label>
-                    <input id="email" placeholder="name@correo.com" type="email" name="email" />
+                    <input id="email" placeholder="empresa@dominio.com" type="email" name="email" />
 
                     <label for="asunto">Asunto:</label>
-                    <input id="asunto" placeholder="Asunto" type="subject" name="subject" />
+                    <input id="asunto" placeholder="ref:" type="subject" name="subject" />
 
                     <label for="coments">Comentarios</label>
-                    <textarea placeholder="Write something" id="coments" name="coments" cols="30" rows="5"></textarea>
+                    <textarea placeholder="escribe tu comentario" id="coments" name="coments" cols="30" rows="5"></textarea>
 
                     <input id="btn_Submit" class="submit" type="submit" value="Enviar" />
 
@@ -132,7 +134,7 @@
     <script src="js/scriptTexto.js"></script>
     <script src="js/alert.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    
+
 </body>
 
 </html>
