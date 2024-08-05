@@ -147,6 +147,11 @@ img:hover{
     max-width: 500px;
     min-width: 100px;
 }
+.about__img__Perfil:hover{
+    scale:1;
+}
+
+
 
 .about .redes {
     display: flex;
@@ -356,9 +361,10 @@ h2 {
     text-align: center;
 }
 
-.services__aprendiendo h1 {
-    font-size: 4em;
+.services__aprendiendo p {
+    font-size: 3em;
     padding: 0em .2em 0em .2em;
+    font-family: var(--Poppins);
 }
 
 /*tercera pagina*/

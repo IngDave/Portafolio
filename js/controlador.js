@@ -15,7 +15,7 @@ efectoTextTyping(div, about__script__Texto);
 /*Alert_Formulario*/
 document.getElementById('btn_Submit').onclick = function () {
     Swal.fire({
-        position: "bottom-end",
+        position: "bottom-start",
         icon: "success",
         title: "Mensaje enviado",
         text: "¡Guardado exitosamente!",
