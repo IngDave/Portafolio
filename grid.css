@@ -380,7 +380,6 @@ h2,p {
 .projects__container {
     display: flex;
     flex-direction: column;
-    border: 1px solid #6629c3;
 }
 
 .projects .projects__container h1 {
@@ -390,7 +389,6 @@ h2,p {
 }
 
 .projects__main {
-    border: 1px solid #c4ff04;
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -399,7 +397,7 @@ h2,p {
 }
 
 .projects .projects__container__selection {
-    border: 1px solid white;
+    
 }
 
 .projects .projects__img__CluckSys {
@@ -474,7 +472,7 @@ h2,p {
     
 }
 .projects__skill{
-    border: 1px solid #136d94;
+    
     
 }
 .projects__skill img{
