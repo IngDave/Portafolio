@@ -96,6 +96,7 @@ img:hover {
 
 .about {
     /*primera pagina*/
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -199,6 +200,7 @@ img:hover {
 
 /*segunda pagina*/
 .services {
+    height: 100vh;
     margin-left: 3em;
     font-family: var(--Poppins);
 }
@@ -254,7 +256,7 @@ img:hover {
 
 .services .services__btn:hover {
     background: #ff4010;
-    transform: translateY(-8px);
+    transform: translateY(-3px);
 
 }
 
@@ -271,7 +273,7 @@ img:hover {
 
 .services .services__btn1:hover {
     background: #039ae5;
-    transform: translateY(-8px);
+    transform: translateY(-3px);
 
 }
 
@@ -288,7 +290,7 @@ img:hover {
 
 .services .services__btn2:hover {
     background: #fff158;
-    transform: translateY(-8px);
+    transform: translateY(-3px);
 
 }
 
@@ -305,7 +307,7 @@ img:hover {
 
 .services .services__btn3:hover {
     background: #6629c3;
-    transform: translateY(-8px);
+    transform: translateY(-3px);
 }
 
 .services .services__btn4 {
@@ -322,7 +324,7 @@ img:hover {
 .services .services__btn4:hover {
     background: #f8e757;
     color: #000000;
-    transform: translateY(-8px);
+    transform: translateY(-3px);
 }
 
 .services .services__Img__pyg {
@@ -371,6 +373,7 @@ h2,p {
 
 /*tercera pagina*/
 .projects {
+    height: 100vh;
     margin-left: 3em;
     font-family: var(--Poppins);
 }
@@ -392,10 +395,6 @@ h2,p {
     text-align: center;
     gap: 1em;
     margin: 1em;
-}
-
-.projects .projects__container__selection {
-    
 }
 
 .projects .projects__img__CluckSys {
@@ -469,10 +468,7 @@ h2,p {
     flex-direction: row;
     
 }
-.projects__skill{
-    
-    
-}
+
 .projects__skill img{
     height: 60px;
 
@@ -480,15 +476,16 @@ h2,p {
 
 /*cuarta pagina*/
 .contact {
+    height: 100vh;
     margin-left: 3em;
-    padding: 0em 0em 8em 0em;
+    padding-bottom:1em;
 }
 
 .contact h1 {
     font-size: 1.5em;
     text-align: center;
     font-family: var(--Poppins);
-    padding: 2em 0em 1em 0em;
+    padding: 1em 0em 1em 0em;
 }
 
 .contact form {
@@ -509,7 +506,7 @@ h2,p {
 
 .contact input,
 textarea {
-    padding: .5em 1em .5em 1em;
+    padding: .5em;
     border: 0;
     font-size: 1em;
     border-radius: .8em;
@@ -525,13 +522,13 @@ textarea {
     transition: all .3s ease;
     font-family: var(--Poppins);
     font-size: 1em;
-    margin-top: 1.5em;
+    margin-top: 1em;
 
 }
 
 .contact .submit:hover {
     background-color: #0081dd;
-    transform: translateY(-8px);
+    transform: translateY(-3px);
 }
 
 input:focus,
