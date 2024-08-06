@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-
 :root {
     --background: linear-gradient(90deg, black 2%, #193248 70%, #193248 90%);
     --background-text: linear-gradient(90deg, #136d94 10%, black 60%, #f0df53 100%);
@@ -48,11 +46,10 @@ section {
     justify-content: center;
 }
 
-img:hover{
+img:hover {
     scale: 1.2;
     transition: all .5s ease;
 }
-
 
 /* The sidebar menu */
 .sidenav {
@@ -72,41 +69,37 @@ img:hover{
 .sidenav a {
     text-decoration: none;
     font-size: 2em;
-    padding: 0.25em 1em 0.25em;
+    padding: .2em 1em .2em;
     color: white;
     display: flex;
     justify-content: center;
-    transition: all 0.5s ease;
-
+    
 }
 
 .sidenav a:hover {
     background: var(--background);
     border-radius: 5px;
-    margin: 5px;
-    padding: 0px 8px 0px;
+    padding: .2em 1em .2em;
     font-family: bold var(--rubik);
-    
+    transform:translateY(5px);
+    transition: all 0.5s ease;
+}/*fin de sidenav*/
 
-}
-
-/*fin de sidenav*/
-
-.container {
-    /* contenedor de paginas*/
+.container { /* contenedor de paginas*/
     margin-left: 8.75em;
     display: flex;
     flex-direction: column;
     background: var(--background);
-
 }
 
 .about {
     /*primera pagina*/
+    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-left: 3em;
+    border: 1px solid white;
 }
 
 .about__text__Uno {
@@ -114,12 +107,10 @@ img:hover{
     text-align: left;
     padding: 0rem 0rem 1rem 9rem;
     font-family: var(--Poppins);
-
 }
 
 .text__Strong {
     font-size: 1.5em;
-
 }
 
 .about__script__Texto {
@@ -138,7 +129,6 @@ img:hover{
 
 .img__Perfil {
     width: 50%;
-
     margin: 0;
 }
 
@@ -147,11 +137,10 @@ img:hover{
     max-width: 500px;
     min-width: 100px;
 }
-.about__img__Perfil:hover{
-    scale:1;
+
+.about__img__Perfil:hover {
+   scale: 1;
 }
-
-
 
 .about .redes {
     display: flex;
@@ -175,6 +164,16 @@ img:hover{
     align-items: center;
 }
 
+.about .about__Redes__linkedin:hover {
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}
+
+.about .about__Redes__github:hover {
+    transform: translateY(-5px);
+    transition: all .5s ease;
+}
+
 .about .about__Redes__github {
     color: #ffffff;
     text-decoration: none;
@@ -196,14 +195,21 @@ img:hover{
 
 /*segunda pagina*/
 .services {
+    border: 1px solid #039ae5;
+    height: 100vh;
     margin-left: 3em;
     font-family: var(--Poppins);
 
 }
 
 .services .services__data {
+    border: 1px solid #039ae5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
     margin-right: 1.5em;
-    padding: 0em 0em 6em 0em;
 }
 
 .services .services__Title {
@@ -315,14 +321,15 @@ img:hover{
 }
 
 .services .services__btn4:hover {
-    background: #000000;
+    background: #f8e757;
+    color: #000000;
     transform: translateY(-8px);
 }
 
 .services .services__Img__pyg {
     height: 8em;
     padding-bottom: 1em;
-    
+
 }
 
 .services p {
@@ -369,28 +376,62 @@ h2 {
 
 /*tercera pagina*/
 .projects {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 30px;
-    padding: 0em 2em 0em;
+    height: 100vh;
+    border: 1px solid red;
+    margin-left: 3em;
+    font-family: var(--Poppins);
+}
+
+.projects .projects__container {
+    border: 1px solid #ffd21f;
 
 }
 
-.projects__data {
+.projects .projects__container h1 {
+    text-align: center;
+    font-size: 2em;
+    margin: .5em;
+
+}
+
+.projects .projects__main {
+    border: 1px solid indigo;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 1px solid #b60a0a;
+    flex-direction: row;
+    text-align: center;
+    gap: 1em;
+    margin: 1em;
+}
+
+.projects .projects__container__selection {
+    border: 1px solid white;
+}
+
+.projects img {
+    border-radius: 1em;
+}
+
+.projects img:hover {
+    border-radius: 1em;
+    scale: 1;
+    transform: translateY(-5px);
+
+}
+
+.projects p {
+    margin: .5em;
 }
 
 /*cuarta pagina*/
 .contact {
+    border: 1px solid #02ff6b;
+    height: 100vh;
     margin-left: 3em;
     padding: 0em 0em 8em 0em;
 }
 
 .contact h1 {
+    font-size: 1.5em;
     text-align: center;
     font-family: var(--Poppins);
     padding: 2em 0em 1em 0em;
@@ -407,10 +448,9 @@ h2 {
 }
 
 .contact label {
-    font-size: 1.1em;
+    font-size: 1.2em;
     padding: 0.5em 0em .5em 0em;
     font-family: var(--Poppins);
-
 }
 
 .contact input,
@@ -425,13 +465,13 @@ textarea {
 
 .contact .submit {
     background-color: #004d84;
-    width: 150px;
+    width: 100px;
     color: white;
     cursor: pointer;
     transition: all .3s ease;
     font-family: var(--Poppins);
-    font-size: 18px;
-    margin-top: 1em;
+    font-size: 1em;
+    margin-top: 1.5em;
 
 }
 
@@ -445,10 +485,9 @@ textarea:focus {
     outline: 3px solid #0081dd;
 }
 
-.footer{
-    margin-left:8.75em ;
+.footer {
+    margin-left: 8.75em;
     background: #004d84;
-
 }
 
 .header {
