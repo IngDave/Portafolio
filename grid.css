@@ -14,12 +14,11 @@
 }
 
 html {
+    width: 100%;
     font-size: 16px;
     scroll-behavior: smooth;
-}
-
-body {
-    min-;
+    scrollbar-width: none;
+   
 }
 
 br::selection,
@@ -200,17 +199,18 @@ img:hover {
 
 /*segunda pagina*/
 .services {
+    border: 1px solid white;
     margin-left: 3em;
     font-family: var(--Poppins);
 }
 
 .services .services__data {
-
+    border: 1px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-right: 1.5em;
+    margin: 0em 1.5em;
 }
 
 .services .services__Title {
