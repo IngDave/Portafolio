@@ -378,68 +378,51 @@ h2,p {
     font-family: var(--Poppins);
 }
 
-.projects__container {
-    display: flex;
-    flex-direction: column;
-}
-
-.projects .projects__container h1 {
-    text-align: center;
-    font-size: 2em;
-    margin: .5em;
-}
-
 .projects__main {
     display: flex;
     flex-direction: row;
     text-align: center;
+justify-content: center;
     gap: 1em;
     margin: 1em;
 }
-
-.projects .projects__img__CluckSys {
-    height: 150px;
-    margin-top: 1em;
-    margin-bottom: .5em;
-
-}
-
-.projects__container__selection__CluckSys {
+.projects__CluckSys{
     background: linear-gradient(to right, #e65c00, #f9d423);
-    width: 25%;
+    width: 20%;
     border-radius: 1em;
     align-items: center;    
 }
 
-.projects__container__selection__CluckSys p{
-    margin: .5em 0em ;
+.projects__CluckSys p,a{
+    margin:0;
 }
 .projects i{
     color: black;
-    font-size: 2em;
-    margin-bottom: 1em ;
+    font-size: 1.5em;
+    margin-bottom: 1em;
 }
-.projects__a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-items: center;
-    justify-content: center;
+.projects .p{
+    margin-top: .5em;
+}
+.projects__img__CluckSys {
+    height: 100px;
+    margin-top: .5em;
+    margin-bottom: .2em;
 }
 
-.projects__container__selection__Encriptador {
-    width: 25%;
+.projects__Encriptador {
+    width: 20%;
     border-radius: 1em;
     background: white;
     align-items: center;
 }
 
-.projects__container__selection__Encriptador p{
+.projects__Encriptador p{
     margin: .5em 0em ;
 }
 
 .projects__img__Encriptador {
-    height: 23em;
+    height: 15em;
 }
 
 .projects .p {
@@ -463,21 +446,21 @@ h2,p {
     transform: translateY(-5px);
 }
 
-.projects__container__selection__Qr{
-    width: 25%;
+.projects__Qr{
+    width: 20%;
     border-radius: 1em;
     background: #008000;
     align-items: center;
 }
 
 .projects__img__Qr {
-    height: 23em;
+    height: 20em;
     text-align: center;
     padding-top: 1em;
 }
 
-.projects__container__selection__numberRandom{
-    width: 25%;
+.projects__numberRandom{
+    width: 20%;
     border-radius: 1em;
     background: #980098;
     align-items: center;
@@ -485,7 +468,7 @@ h2,p {
 }
 
 .projects__img__numberRandom {
-    height: 23em;
+    height: 20em;
     text-align: center;
 }
 
@@ -496,8 +479,7 @@ h2,p {
 }
 
 .projects__skill img{
-    height: 60px;
-
+    height: 45px;
 }
 
 /*cuarta pagina*/
@@ -581,7 +563,6 @@ footer .social_icon {
     gap: .5em;
 }
 
-
 .header {
     grid-area: header;
 }
@@ -602,6 +583,48 @@ footer .social_icon {
     grid-area: contact;
 }
 
-@media screen {
-    /**/
+@media (max-width:1024px) {
+    /*sidenav*/
+    .sidenav {
+        height: 100%;
+        position: fixed;
+        overflow-x: hidden;
+        display: flex;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        font-family: var(--rubik);
+        background-color: #000000;
+    }
+    
+    .sidenav a {
+        text-decoration: none;
+        font-size: 2em;
+        padding: .2em 1em .2em;
+        color: white;
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .sidenav a:hover {
+        background: var(--background);
+        border-radius: 5px;
+        padding: .2em 1em .2em;
+        font-family: bold var(--rubik);
+        transform: translateY(5px);
+        transition: all 0.5s ease;
+    }
+
+
+    /*primera pagina*/
+    .about {
+        
+        height: 100vh;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 3em;
+    }   
 }
