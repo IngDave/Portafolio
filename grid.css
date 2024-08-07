@@ -284,7 +284,7 @@ img:hover {
     border-radius: .5em;
     font-family: var(--Poppins);
     transition: all .2s ease;
-    padding: .5em 1em .5em 1em;
+    padding: .5em;
     font-size: .9em;
 }
 
@@ -406,7 +406,7 @@ h2,p {
 
 .projects__container__selection__CluckSys {
     background: linear-gradient(to right, #e65c00, #f9d423);
-    width: 50%;
+    width: 25%;
     border-radius: 1em;
     align-items: center;    
 }
@@ -428,7 +428,7 @@ h2,p {
 }
 
 .projects__container__selection__Encriptador {
-    width: 50%;
+    width: 25%;
     border-radius: 1em;
     background: white;
     align-items: center;
@@ -454,7 +454,7 @@ h2,p {
     text-decoration: none;
     font-size: 1.1em;
     color: black;
-    padding: 0em .5em;
+    padding: 0em 3em;
 }
 
 .projects img:hover {
