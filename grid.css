@@ -463,6 +463,32 @@ h2,p {
     transform: translateY(-5px);
 }
 
+.projects__container__selection__Qr{
+    width: 25%;
+    border-radius: 1em;
+    background: #008000;
+    align-items: center;
+}
+
+.projects__img__Qr {
+    height: 23em;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.projects__container__selection__numberRandom{
+    width: 25%;
+    border-radius: 1em;
+    background: #980098;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.projects__img__numberRandom {
+    height: 23em;
+    text-align: center;
+}
+
 .projects__skills{
     display: flex;
     flex-direction: row;
