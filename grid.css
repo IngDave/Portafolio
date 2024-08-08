@@ -18,7 +18,7 @@ html {
     font-size: 16px;
     scroll-behavior: smooth;
     scrollbar-width: none;
-   
+
 }
 
 br::selection,
@@ -50,45 +50,14 @@ img:hover {
     transition: all .5s ease;
 }
 
-/* The sidebar menu */
-.sidenav {
-    height: 100%;
-    position: fixed;
-    overflow-x: hidden;
-    display: flex;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    flex-direction: column;
-    justify-content: center;
-    font-family: var(--rubik);
-    background-color: #000000;
-}
+/* The sidebar menu*/
 
-.sidenav a {
-    text-decoration: none;
-    font-size: 2em;
-    padding: .2em 1em .2em;
-    color: white;
-    display: flex;
-    justify-content: center;
-
-}
-
-.sidenav a:hover {
-    background: var(--background);
-    border-radius: 5px;
-    padding: .2em 1em .2em;
-    font-family: bold var(--rubik);
-    transform: translateY(5px);
-    transition: all 0.5s ease;
-}
 
 /*fin de sidenav*/
 
 .container {
     /* contenedor de paginas*/
-    margin-left: 8.75em;
+    
     display: flex;
     flex-direction: column;
     background: var(--background);
@@ -96,11 +65,10 @@ img:hover {
 
 .about {
     /*primera pagina*/
-    height: 100vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 3em;
+    
 
 }
 
@@ -130,7 +98,6 @@ img:hover {
 }
 
 .img__Perfil {
-    width: 50%;
     display: flex;
     justify-content: center;
 
@@ -200,8 +167,6 @@ img:hover {
 
 /*segunda pagina*/
 .services {
-    height: 100vh;
-    margin-left: 3em;
     font-family: var(--Poppins);
 }
 
@@ -334,7 +299,8 @@ img:hover {
 }
 
 .services .services__devWeb h3,
-h2,p {
+h2,
+p {
     padding-bottom: .3em;
     text-align: center;
 }
@@ -373,37 +339,41 @@ h2,p {
 
 /*tercera pagina*/
 .projects {
-    height: 100vh;
-    margin-left: 3em;
-    font-family: var(--Poppins);
+    display: grid;
+    place-items: center;
+   font-family: var(--Poppins);
 }
 
 .projects__main {
     display: flex;
     flex-direction: row;
     text-align: center;
-justify-content: center;
+    justify-content: center;
     gap: 1em;
     margin: 1em;
 }
-.projects__CluckSys{
+
+.projects__CluckSys {
     background: linear-gradient(to right, #e65c00, #f9d423);
     width: 20%;
     border-radius: 1em;
-    align-items: center;    
+    align-items: center;
 }
 
-.projects__CluckSys p,a{
-    margin:0;
+.projects__CluckSys p,a {
+    margin: 0;
 }
-.projects i{
+
+.projects i {
     color: black;
     font-size: 1.5em;
     margin-bottom: 1em;
 }
-.projects .p{
+
+.projects .p {
     margin-top: .5em;
 }
+
 .projects__img__CluckSys {
     height: 100px;
     margin-top: .5em;
@@ -417,23 +387,19 @@ justify-content: center;
     align-items: center;
 }
 
-.projects__Encriptador p{
-    margin: .5em 0em ;
+.projects__Encriptador p {
+    margin: .5em 0em;
 }
 
 .projects__img__Encriptador {
-    height: 15em;
-}
-
-.projects .p {
-    text-decoration: none;
-    font-size: 1.5em;
-    color: black;
-    font-weight: bold;
-
+    width:80%;
 }
 
 .projects p {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     text-decoration: none;
     font-size: 1.1em;
     color: black;
@@ -446,20 +412,20 @@ justify-content: center;
     transform: translateY(-5px);
 }
 
-.projects__Qr{
+.projects__Qr {
     width: 20%;
     border-radius: 1em;
     background: #008000;
     align-items: center;
+
 }
 
 .projects__img__Qr {
-    height: 20em;
-    text-align: center;
-    padding-top: 1em;
+    margin-top: 1.5em;
+    width: 80%;
 }
 
-.projects__numberRandom{
+.projects__numberRandom {
     width: 20%;
     border-radius: 1em;
     background: #980098;
@@ -468,25 +434,23 @@ justify-content: center;
 }
 
 .projects__img__numberRandom {
-    height: 20em;
-    text-align: center;
+    margin-top: 1.5em;
+    width: 80%;  
 }
 
-.projects__skills{
+.projects__skills {
     display: flex;
     flex-direction: row;
-    
+
 }
 
-.projects__skill img{
+.projects__skill img {
     height: 45px;
 }
 
 /*cuarta pagina*/
 .contact {
-    height: 100vh;
-    margin-left: 3em;
-    padding-bottom:1em;
+    padding-bottom: 1em;
 }
 
 .contact h1 {
@@ -545,7 +509,6 @@ textarea:focus {
 }
 
 footer {
-    margin-left: 3em;
     padding: .5em;
     background: #004d84;
     justify-content: center;
@@ -561,70 +524,4 @@ footer .social_icon {
     align-items: center;
     color: white;
     gap: .5em;
-}
-
-.header {
-    grid-area: header;
-}
-
-.about {
-    grid-area: about;
-}
-
-.services {
-    grid-area: services;
-}
-
-.proyects {
-    grid-area: proyects;
-}
-
-.contact {
-    grid-area: contact;
-}
-
-@media (max-width:1024px) {
-    /*sidenav*/
-    .sidenav {
-        height: 100%;
-        position: fixed;
-        overflow-x: hidden;
-        display: flex;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        flex-direction: column;
-        justify-content: center;
-        font-family: var(--rubik);
-        background-color: #000000;
-    }
-    
-    .sidenav a {
-        text-decoration: none;
-        font-size: 2em;
-        padding: .2em 1em .2em;
-        color: white;
-        display: flex;
-        justify-content: center;
-    
-    }
-    
-    .sidenav a:hover {
-        background: var(--background);
-        border-radius: 5px;
-        padding: .2em 1em .2em;
-        font-family: bold var(--rubik);
-        transform: translateY(5px);
-        transition: all 0.5s ease;
-    }
-
-
-    /*primera pagina*/
-    .about {
-        
-        height: 100vh;
-        display: flex;
-        flex-direction: column-reverse;
-        margin-left: 3em;
-    }   
 }
