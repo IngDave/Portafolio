@@ -387,6 +387,10 @@ p {
     align-items: center;
 }
 
+.projects__Qr h1{
+    padding-top: 2rem;
+}
+
 .projects__Encriptador p {
     margin: .5em 0em;
 }
