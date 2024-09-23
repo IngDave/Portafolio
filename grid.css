@@ -339,8 +339,6 @@ p {
 
 /*tercera pagina*/
 .projects {
-    display: grid;
-    place-items: center;
    font-family: var(--Poppins);
 }
 
@@ -432,25 +430,23 @@ p {
 .projects__numberRandom {
     width: 20%;
     border-radius: 1em;
-    background: #980098;
+    background: #9C5516;
     align-items: center;
     padding-top: 1em;
 }
 
-.projects__img__numberRandom {
-    margin-top: 1.5em;
-    width: 80%;  
+.projects__d h1{
+    padding: 1rem;
 }
 
-.projects__skills {
-    display: flex;
-    flex-direction: row;
-
+.projects__d a{
+    padding-top: 2rem;
 }
 
 .projects__skill img {
     height: 45px;
 }
+
 
 /*cuarta pagina*/
 .contact {
