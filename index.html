@@ -6,164 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio | Inicio</title>
     <link rel="stylesheet" href="grid.css" />
-    <link rel="stylesheet" href="mobile.css" />
+    <link rel="stylesheet" href="cards.css">
     <link rel="icon" href="picture/favicon/android-icon-36x36.png" />
     <script src="https://kit.fontawesome.com/b4d54e82a1.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
- 
+
     <main class="container">
         <!--description-->
-        <section id="about" class="about">
-            <div class="about__Texto">
-                <p class="about__text__Uno">Hola, soy
-                    <strong class="text__Strong"><br />David Tejada</strong>
-                </p>
-
-                <div class="about__script__Texto"></div>
-                <p class="about__text__Dos">
-                    Con sólida formación académica, experiencia en desarrollo web y programación básica.
-                </p>
-                <div class="redes">
-                    <a class="about__Redes__linkedin" href="https://www.linkedin.com/in/datejad/">LinkedIn
-                        <img class="img__Redes" src="picture/social/linkedin.png" alt="icon LinkedIn" />
-                    </a>
-                    <a class="about__Redes__github" href="https://github.com/IngDave">Github
-                        <img class="img__Redes" src="picture/social/github.png" alt="icon Github" />
-                    </a>
+        <section id="about" class="container__about">
+            <div class="container__about__Texto">
+                <p class="container__about__text__Uno">Hola, soy <strong class="text__Strong"><br /> David Tejada
+                    </strong></p>
+                <div class="container__about__script__Texto"></div>
+                <p class="container__about__text__Dos"> Con sólida formación académica, experiencia en desarrollo web y
+                    programación básica.</p>
+                <div class="container__redes">
+                    <ul class="redes">
+                        <li class="icon-content">
+                            <a href="https://linkedin.com/" aria-label="LinkedIn" data-social="linkedin">
+                                <div class="filled"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-linkedin" viewBox="0 0 16 16" xml:space="preserve">
+                                    <path
+                                        d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="redes">
+                        <li class="icon-content">
+                            <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                                <div class="filled"></div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-github" viewBox="0 0 16 16" xml:space="preserve">
+                                    <path
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <!--Foto-->
-            <div class="img__Perfil">
-                <img class="about__img__Perfil" src="picture/social/bitmap.webp" alt="profile photo" />
+            <div class="container__img__Perfil">
+                <img class="container__about__img__Perfil" src="picture/social/bitmap.webp" alt="profile photo" />
             </div>
         </section>
-
-        <section id="services" class="services">
-            <div class="services__data">
-                <h1 class="services__Title">Desarrollo Web</h1>
-                <div class="services__container__uno">
-                    <div class="services__devWeb">
-                        <img class="services__Img" src="picture/tecnologies/html5.png" alt="">
+        <!--servicios-->
+        <section id="services" class="container__services">
+            <div class="container__services__data">
+                <h1 class="container__services__Title">Desarrollo Web</h1>
+                <div class="container__services__container__uno">
+                    <div class="container__services__devWeb">
+                        <img class="container__services__Img" src="picture/tecnologies/html5.png" alt="htm5">
                         <h3>HTML5</h3>
                         <p>Correcta aplicación de la estructura básica del documento web.</p>
-                        <button class="services__btn">Seguir leyendo </button>
+                        <button class="container__services__btn">Seguir leyendo </button>
                     </div>
 
-                    <div class="services__devWeb">
-                        <img class="services__Img" src="picture/tecnologies/css3.png" alt="">
+                    <div class="container__services__devWeb">
+                        <img class="container__services__Img" src="picture/tecnologies/css3.png" alt="css">
                         <h3>CSS3</h3>
                         <p>Estilización del documento web, controlando su apariencia y diseño visual.</p>
-                        <button class="services__btn1">Seguir leyendo </button>
+                        <button class="container__services__btn1">Seguir leyendo </button>
                     </div>
-                    <div class="services__devWeb">
-                        <img class="services__Img" src="picture/tecnologies/js.png" alt="">
+                    <div class="container__services__devWeb">
+                        <img class="container__services__Img" src="picture/tecnologies/js.png" alt="JavaScript">
                         <h3>JavaScript</h3>
                         <p>Crear interactividad y dinamismo en las páginas web</p>
-                        <button class="services__btn2">Seguir leyendo</button>
+                        <button class="container__services__btn2">Seguir leyendo</button>
                     </div>
                 </div>
-                <div class="services__devWeb">
+                <div class="container__services__devWeb">
                     <h2>Frameworks:</h2>
-                    <img class="services__Img" src="picture/tecnologies/bootstrap.png" alt="">
+                    <img class="container__services__Img" src="picture/tecnologies/bootstrap.png" alt="bootstrap">
                     <h3>Bootstrap5</h3>
                     <p>diseño y desarrollo de sitios y aplicaciones web responsivas.</p>
-                    <button class="services__btn3">Seguir leyendo</button>
+                    <button class="container__services__btn3">Seguir leyendo</button>
                 </div>
             </div>
 
-            <div class="services__data">
-                <h1 class="services__Title"> Programación Básica</h1>
-                <div class="services__devWeb">
+            <div class="container__services__data">
+                <h1 class="container__services__Title"> Programación Básica</h1>
+                <div class="container__services__devWeb">
                     <h3>Buenos Conocimientos en:</h3>
-                    <img class="services__Img__pyg" src="picture/tecnologies/python.png" alt="">
+                    <img class="container__services__Img__pyg" src="picture/tecnologies/python.png" alt="python">
                     <h3>Python & Github</h3>
                     <p>Programación básica en Python enfocada a la programación orientada a objetos junto al uso de
                         herramientas de control de versiones para el trabajo en equipos.</p>
-                    <button class="services__btn4">Seguir leyendo</button>
+                    <button class="container__services__btn4">Seguir leyendo</button>
                 </div>
 
-                <h1 class="services__title__aprendiendo"> Actualmente aprendiendo</h1>
-                <div class="services__container__dos">
-                    <div class="services__aprendiendo">
-                        <img class="services__aprendiendo__Img" src="picture/tecnologies/java.png" alt="logo Java">
+                <h1 class="container__services__title__aprendiendo"> Actualmente aprendiendo</h1>
+                <div class="container__services__container__dos">
+                    <div class="container__services__aprendiendo">
+                        <img class="container__services__aprendiendo__Img" src="picture/tecnologies/java.png"
+                            alt="logo Java">
                         <h3>Java</h3>
                     </div>
-                    <div class="services__aprendiendo">
-                        <img class="services__aprendiendo__Img" src="picture/tecnologies/spring.png"
-                            alt="logo Spring Boot">
+                    <div class="container__services__aprendiendo">
+                        <img class="container__services__aprendiendo__Img" src="picture/tecnologies/spring.png"
+                            alt="container__logo Spring Boot">
                         <h3>Spring Boot</h3>
                     </div>
-                    <div class="services__aprendiendo">
+                    <div class="container__services__aprendiendo">
                         <p>&</p>
                     </div>
-                    <div class="services__aprendiendo">
-                        <img class="services__aprendiendo__Img" src="picture/tecnologies/aws.png" alt="logo aws">
+                    <div class="container__services__aprendiendo">
+                        <img class="container__services__aprendiendo__Img" src="picture/tecnologies/aws.png"
+                            alt="logo aws">
                         <h3>Cloud</h3>
                     </div>
-                    <div class="services__aprendiendo">
-                        <img class="services__aprendiendo__Img" src="picture/tecnologies/react.png" alt="logo React">
+                    <div class="container__services__aprendiendo">
+                        <img class="container__services__aprendiendo__Img" src="picture/tecnologies/react.png"
+                            alt="logo React">
                         <h3>React.Js</h3>
                     </div>
                 </div>
 
         </section>
-
+        <!--proyectos-->
         <section id="projects" class="projects">
             <div class="projects__main">
-                <div class="projects__CluckSys">
-                    <div>
-                        <p class="p">CluckSys</p>
-                        <a href="https://ingdave.github.io/CluckSys/">
-                            <img class="projects__img__CluckSys" src="picture/projects/CluckSys.png"
-                                alt="CluckSys Image"></a>
-                        <p>Sistema de inventariado para una empresa del sector avícola. </p>
-                        <p><strong>(Aún no terminado)</strong></p>
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                <div class="projects__items">
+                    <div class="card">
+                        <img src="picture/projects/qrcode.svg" alt="">
+                        <div class="card__content">
+                            <p class="card__title">EncryptMaster</p>
+                            <p class="card__description">La creación de un encriptador de textos me permite aplicar conocimientos teóricos adquirido en los cursos de lógica de programación en un contexto práctico, en el cual se ha adquirido habilidades en la manipulación de datos y la implementación de algoritmos. Además, fomenta la creatividad y la innovación.</p>
+                            <button class="card__button">Ver Demo</button>
+                            <button class="card__button secondary">Ver Codigo</button>
+                        </div>
                     </div>
-                    <div class="projects__skill">
-                        <img src="picture/tecnologies/html5.png" alt="">
-                        <img src="picture/tecnologies/css3.png" alt="">
-                        <img src="picture/tecnologies/js.png" alt="">
-                    </div>
-                </div>
-                <div class="projects__Encriptador">
-                    <div class="projects__b">
-                        <p class="p"> Codificador QR</p>
-                        <a href=""><img class="projects__img__Encriptador" src="picture/projects/Encriptador.png"
-                                alt="Encriptador imagen"></a>
-                    </div>
-                    <div class="projects__skill">
-                        <img src="picture/tecnologies/html5.png" alt="">
-                        <img src="picture/tecnologies/css3.png" alt="">
-                        <img src="picture/tecnologies/js.png" alt="">
-                    </div>
-                </div>
-                <div class="projects__Qr">
-                    <div class="projects__c">
-                        <h1>Encriptador de textos</h1>
-                        <a href="https://ingdave.github.io/Encriptador-de-textos"><img class="projects__img__Qr" src="picture/projects/qrcode.svg" alt="Encriptador imagen"></a>
-                    </div>
-                    <div class="projects__skill">
-                        <img src="picture/tecnologies/html5.png" alt="">
-                        <img src="picture/tecnologies/css3.png" alt="">
-                        <img src="picture/tecnologies/js.png" alt="">
-                    </div>
-                </div>
-                <div class="projects__numberRandom">
-                    <div class="projects__d">
-                        <h1>Adivinar Numero | Game </h1>
-                        <a href="https://ingdave.github.io/Numero-Misterioso-Game/"><img src="picture/projects/adivina.png" alt=""></a>
-                    </div>
-                    <div class="projects__skill">
-                        <img src="picture/tecnologies/html5.png" alt="">
-                        <img src="picture/tecnologies/css3.png" alt="">
-                        <img src="picture/tecnologies/js.png" alt="">
-                    </div>
-                </div>
 
+                </div>
+                <div class="projects__items">
+                    <div class="card">
+                         <img src="picture/projects/qrcode.svg" alt="">
+                         <div class="card__content">
+                             <p class="card__title">EncryptMaster</p>
+                             <p class="card__description">La creación de un encriptador de textos me permite aplicar conocimientos teóricos adquirido en los cursos de lógica de programación en un contexto práctico, en el cual se ha adquirido habilidades en la manipulación de datos y la implementación de algoritmos. Además, fomenta la creatividad y la innovación.</p>
+                             <button class="card__button">Ver Demo</button>
+                             <button class="card__button secondary">Ver Codigo</button>
+                         </div>
+                     </div>
+                </div>
+                <div class="projects__items">
+                    <div class="card">
+                         <img src="picture/projects/qrcode.svg" alt="">
+                         <div class="card__content">
+                             <p class="card__title">EncryptMaster</p>
+                             <p class="card__description">La creación de un encriptador de textos me permite aplicar conocimientos teóricos adquirido en los cursos de lógica de programación en un contexto práctico, en el cual se ha adquirido habilidades en la manipulación de datos y la implementación de algoritmos. Además, fomenta la creatividad y la innovación.</p>
+                             <button class="card__button">Ver Demo</button>
+                             <button class="card__button secondary">Ver Codigo</button>
+                         </div>
+                     </div>
+                </div>
+                <div class="projects__items">
+                    <div class="card">
+                        <img src="picture/projects/CluckSys.png" alt="logo CluckSys">
+                         <div class="card__content__cuatro">
+                             <p class="card__title__cuatro">CluckSys</p>
+                             <p class="card__description__cuatro">La creación de un encriptador de textos me permite aplicar conocimientos teóricos adquirido en los cursos de lógica de programación en un contexto práctico, en el cual se ha adquirido habilidades en la manipulación de datos y la implementación de algoritmos. Además, fomenta la creatividad y la innovación.</p>
+                             <button class="card__button__cuatro">Ver Demo</button>
+                             <button class="card__button_cuatro secondary__cuatro">Ver Codigo</button>
+                         </div>
+                     </div>
+                </div>
             </div>
         </section>
 
