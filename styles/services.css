@@ -1,0 +1,172 @@
+
+/*services*/
+.container__services {
+    border: 1px solid salmon;
+    font-family: var(--Varela);
+    display: flex;
+}
+
+.container__services__data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    border: 1px solid greenyellow;
+}
+
+.container__services__Title {
+    text-align: center;
+    padding: .5em 0em 1em 0em;
+    font-size: 1.5em;
+}
+
+.container__services__container__uno {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.container__services__devWeb {
+    margin-left: .3em;
+    margin-right: .3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0000003d;
+    border-radius: .7em;
+    padding: 1rem 1em;
+    height: auto;
+}
+
+.container__services__Img {
+    height: 4em;
+    padding-bottom: .5em;
+}
+
+.container__services__btn {
+    background: #e44d26;
+    color: white;
+    border: 0;
+    border-radius: .5em;
+    font-family: var(--Varela);
+    transition: all .2s ease;
+    padding: .5em 1em .5em 1em;
+    font-size: .8em;
+}
+
+.container__services__btn:hover {
+    background: #ff4010;
+    transform: translateY(-3px);
+}
+
+.container__services__btn1 {
+    background: #0277bd;
+    color: white;
+    border: 0;
+    border-radius: .5em;
+    font-family: var(--Varela);
+    transition: all .2s ease;
+    padding: .5em 1em .5em 1em;
+    font-size: .8em;
+}
+
+.container__services__btn1:hover {
+    background: #039ae5;
+    transform: translateY(-3px);
+
+}
+
+.container__services__btn2 {
+    background: #ffec25;
+    color: black;
+    border: 0;
+    border-radius: .5em;
+    font-family: var(--Varela);
+    transition: all .2s ease;
+    padding: .5em;
+    font-size: .8em;
+}
+
+.container__services__btn2:hover {
+    background: #fff158;
+    transform: translateY(-3px);
+
+}
+
+.container__services__btn3 {
+    background: #341464;
+    color: white;
+    border: 0;
+    border-radius: .5em;
+    font-family: var(--Varela);
+    transition: all .2s ease;
+    padding: .5em 1em .5em 1em;
+    font-size: .8em;
+}
+
+.container__services__btn3:hover {
+    background: #6629c3;
+    transform: translateY(-3px);
+}
+
+.container__services__btn4 {
+    background: #136d94;
+    color: white;
+    border: 0;
+    border-radius: .5em;
+    font-family: var(--Varela);
+    transition: all .3s ease;
+    padding: .5em 1em .5em 1em;
+    font-size: .9em;
+}
+
+.container__services__btn4:hover {
+    background: #f8e757;
+    color: #000000;
+    transform: translateY(-3px);
+}
+
+.container__services__Img__pyg {
+    height: 8em;
+    padding-bottom: 1em;
+}
+
+.container__services__devWeb h3,
+h2,
+p {
+    padding-bottom: .3em;
+    text-align: center;
+}
+
+.container__services__title__aprendiendo {
+    padding: .5em 0em .5em;
+    text-align: center;
+}
+
+.container__services__container__dos {
+    gap: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #0000003d;
+    border-radius: .7em;
+    padding: .5em 1em .5em 1em;
+
+}
+
+.container__services__aprendiendo__Img {
+    height: 50px;
+}
+
+.container__services__aprendiendo h3 {
+    text-align: center;
+}
+
+.container__services__aprendiendo p {
+    font-size: 3em;
+    padding: 0em .2em 0em .2em;
+    font-family: var(--Varela);
+}

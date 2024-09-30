@@ -1,0 +1,62 @@
+
+
+/*contact*/
+.contact {
+    padding-bottom: 1em;
+}
+
+.contact h1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: var(--Varela);
+    padding: 1em 0em 1em 0em;
+}
+
+.contact form {
+    margin: 0em 8em 0em 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00000044;
+    border-radius: 1.2em;
+    padding: 1em 0em 1em 0em;
+}
+
+.contact label {
+    font-size: 1.2em;
+    padding: 0.5em 0em .5em 0em;
+    font-family: var(--Varela);
+}
+
+.contact input,
+textarea {
+    padding: .5em;
+    border: 0;
+    font-size: 1em;
+    border-radius: .8em;
+    font-family: var(--Varela);
+
+}
+
+.contact .submit {
+    background-color: #004d84;
+    width: 100px;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-family: var(--Varela);
+    font-size: 1em;
+    margin-top: 1em;
+
+}
+
+.contact .submit:hover {
+    background-color: #0081dd;
+    transform: translateY(-3px);
+}
+
+input:focus,
+textarea:focus {
+    outline: 3px solid #0081dd;
+}
+
