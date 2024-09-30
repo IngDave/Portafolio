@@ -1,7 +1,6 @@
 
 /*services*/
 .container__services {
-    border: 1px solid salmon;
     font-family: var(--Varela);
     display: flex;
 }
@@ -11,7 +10,6 @@
     align-items: center;
     flex-direction: column;
     margin: 1rem;
-    border: 1px solid greenyellow;
 }
 
 .container__services__Title {

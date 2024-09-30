@@ -136,7 +136,7 @@
         <!--proyectos-->
         <section id="projects" class="projects">
             <div class="projects__main">
-                 <!--<div class="projects__items">
+                <!--<div class="projects__items">
                   proyectos <div class="card">
                         <img src="picture/projects/qrcode.svg" alt="">
                         <div class="card__content">
@@ -215,8 +215,10 @@
                             <p class="card__description__cuatro">Sistema de información para administrar negocios
                                 enfocado en el sector avicola. <br><br><strong> En etapa de desarrollo.</p></strong>
                             <div class="card__botton">
-                                <button class="card__button__cuatro"> <a href="">Demo</a></button>
-                                <button class="card__button__cuatro secondary__cuatro"><a href="">Codigo</a></button>
+                                <button class="card__button__cuatro"> <a
+                                        href="https://ingdave.github.io/CluckSys">Demo</a></button>
+                                <button class="card__button__cuatro secondary__cuatro"><a
+                                        href="https://github.com/IngDave/CluckSys.git">Codigo</a></button>
                             </div>
                         </div>
                     </div>
@@ -226,10 +228,28 @@
 
         <section id="contact" class="contact">
             <div class="form__Contenido">
-                <h1>¡Contactame!, Trabajando juntos impulsaremos el crecimiento organizacional.</h1>
+        
+                <div class="contact__card">
+                    <span class="title">Leave a Comment</span>
+                    <form class="form">
+                        <div class="group">
+                            <input placeholder="‎" type="text" required="">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="group">
+                            <input placeholder="‎" type="email" id="email" name="email" required="">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="group">
+                            <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
+                            <label for="comment">Comment</label>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
 
-                <form action="https://formsubmit.co/188418b3c0d46c9677b5396cf6a38bc2" method="POST">
-                    <!--Consumir api para el form aqui-->
+                <!--<form action="https://formsubmit.co/188418b3c0d46c9677b5396cf6a38bc2" method="POST">
+                    Consumir api para el form aqui
 
                     <label for="name">Nombre</label>
                     <input id="name" placeholder="Ej: John Wick" type="text" name="name" />
@@ -248,7 +268,7 @@
 
                     <input type="hidden" name="_next" value="https://ingdave.github.io/Portafolio/#contact" />
                     <input type="hidden" name="_captcha" id="name" value="false" />
-                </form>
+                </form>-->
             </div>
         </section>
         <footer>
