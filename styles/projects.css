@@ -14,9 +14,16 @@
 .projects {
     font-family: var(--Varela);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.projects h1{
+    font-family: var(--Varela);
+    font-size: 3rem;
+}
+
 
 .projects__main {
     display: flex;
