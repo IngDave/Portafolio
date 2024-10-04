@@ -12,6 +12,7 @@
 
 /*tercera pagina*/
 .projects {
+   
     font-family: var(--Varela);
     display: flex;
     flex-direction: column;

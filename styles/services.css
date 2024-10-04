@@ -1,6 +1,7 @@
 
 /*services*/
 .container__services {
+    border: 1px solid red;
     font-family: var(--Varela);
     display: flex;
 }
@@ -9,13 +10,15 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin: 1rem;
+    margin-top: 5rem;
+    height: auto;
 }
 
 .container__services__Title {
     text-align: center;
     padding: .5em 0em 1em 0em;
-    font-size: 1.5em;
+    font-size: 1.8em;
+   
 }
 
 .container__services__container__uno {
@@ -34,7 +37,7 @@
     background: #0000003d;
     border-radius: .7em;
     padding: 1rem 1em;
-    height: auto;
+    height: 50dvh;
 }
 
 .container__services__Img {
@@ -135,6 +138,8 @@ h2,
 p {
     padding-bottom: .3em;
     text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
 }
 
 .container__services__title__aprendiendo {
@@ -156,15 +161,18 @@ p {
 }
 
 .container__services__aprendiendo__Img {
+    
     height: 50px;
 }
 
 .container__services__aprendiendo h3 {
     text-align: center;
+    
 }
 
 .container__services__aprendiendo p {
     font-size: 3em;
     padding: 0em .2em 0em .2em;
     font-family: var(--Varela);
+    
 }

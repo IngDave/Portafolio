@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio | Inicio</title>
-    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/grid.css" />
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="stylesheet" href="styles/projects.css">
@@ -14,13 +14,24 @@
     <script src="https://kit.fontawesome.com/b4d54e82a1.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
     <header id="navbar" class="navbar">
+        <div class="navbar__container__home">
+            <a href="#about" class="navbar__home"><img src="picture/favicon/contact.svg" alt="logo"> ¡Go up!</a>
+        </div>
         <nav class="navbar__items">
-            <a href="#about" class="navbar__item">Acerca de mí</a>
-            <a href="#services" class="navbar__item">Servicios</a>
-            <a href="#projects" class="navbar__item">Proyectos</a>
-            <a href="#contact" class="navbar__item">Contacto</a>
+            <div class="navbar__container">
+                <a href="#services" class="navbar__item"><img src="picture/favicon/service.svg"
+                        alt="logo services">Servicios</a>
+            </div>
+            <div class="navbar__container">
+                <a href="#projects" class="navbar__item"><img src="picture/favicon/projects.svg"
+                        alt="logo projects">Proyectos</a>
+            </div>
+            <div class="navbar__container">
+                <a href="#contact" class="navbar__item"><img src="picture/favicon/contact.svg" alt="">Contacto</a>
+            </div>
         </nav>
     </header>
 
@@ -36,7 +47,7 @@
                 <div class="container__redes">
                     <ul class="redes">
                         <li class="icon-content">
-                            <a href="https://linkedin.com/" aria-label="LinkedIn" data-social="linkedin">
+                            <a href="https://www.linkedin.com/in/datejad/" aria-label="LinkedIn" data-social="linkedin">
                                 <div class="filled"></div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-linkedin" viewBox="0 0 16 16" xml:space="preserve">
@@ -49,7 +60,7 @@
                     </ul>
                     <ul class="redes">
                         <li class="icon-content">
-                            <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+                            <a href="https://github.com/IngDave" aria-label="GitHub" data-social="github">
                                 <div class="filled"></div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-github" viewBox="0 0 16 16" xml:space="preserve">
@@ -96,7 +107,7 @@
                     <h2>Frameworks:</h2>
                     <img class="container__services__Img" src="picture/tecnologies/bootstrap.png" alt="bootstrap">
                     <h3>Bootstrap5</h3>
-                    <p>diseño y desarrollo de sitios y aplicaciones web responsivas.</p>
+                    <p>Diseño y desarrollo de sitios y aplicaciones web responsivas.</p>
                     <button class="container__services__btn3">Seguir leyendo</button>
                 </div>
             </div>
@@ -173,8 +184,10 @@
                                 pistas para guiar al jugador hasta que acierte.
                             </p>
                             <div class="card__botton__dos">
-                                <button class="button__dos"><a href="https://ingdave.github.io/GhostNumber/">Demo</a></button>
-                                <button class="button__dos secondary__dos"><a href="https://github.com/IngDave/GhostNumber.git">Codigo</a></button>
+                                <button class="button__dos"><a
+                                        href="https://ingdave.github.io/GhostNumber/">Demo</a></button>
+                                <button class="button__dos secondary__dos"><a
+                                        href="https://github.com/IngDave/GhostNumber.git">Codigo</a></button>
                                 <div class="images">
                                     <img src="picture/tecnologies/html5.png" alt="html5 logo">
                                     <img src="picture/tecnologies/css3.png" alt="css3 logo">
@@ -236,7 +249,7 @@
 
         <section id="contact" class="contact">
             <div class="form__Contenido">
-        
+                <h1>contacto</h1>
                 <div class="contact__card">
                     <span class="title">Leave a Comment</span>
                     <form class="form">
