@@ -60,18 +60,17 @@ section {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
     width: 100%;
     background: var(--background);
     z-index: 999;
+    padding-top: .5rem;
 }
 
 .navbar__container__home {
     display: flex;
     align-items: center;
-    padding: .2rem 1rem;
     border-radius: 15px;
-    padding: 0 2rem;
+    padding: 1rem 5rem;
 }
 
 .navbar__home {
@@ -84,7 +83,7 @@ section {
 
 .navbar__home:hover {
     display: flex;
-    background-color: #193248;
+    background-color: #ffffff2d;
     align-items: center;
     padding: .2rem 1rem;
     border-radius: 15px;
@@ -98,6 +97,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 50px;
+    margin:0 3rem;
 
 }
 
@@ -119,7 +119,7 @@ section {
 
 .navbar__container:hover {
     display: flex;
-    background-color: rgb(255, 0, 0);
+    background-color: rgba(255, 255, 255, 0.082);
     align-items: center;
     padding: .2rem 1rem;
     border-radius: 15px;

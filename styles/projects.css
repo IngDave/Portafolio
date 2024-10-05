@@ -12,7 +12,6 @@
 
 /*tercera pagina*/
 .projects {
-   
     font-family: var(--Varela);
     display: flex;
     flex-direction: column;
@@ -20,9 +19,10 @@
     align-items: center;
 }
 
-.projects h1{
+.projects h1 {
     font-family: var(--Varela);
     font-size: 3rem;
+    margin-top: 7rem;
 }
 
 
@@ -34,13 +34,13 @@
     flex-wrap: wrap;
     height: 90dvh;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 .projects__items {
     margin: .5rem;
     display: flex;
     justify-content: center;
-    align-items: none;
 }
 
 /*cards*/
@@ -175,11 +175,16 @@
 }
 
 .card__botton__dos img {
-    width: 30px;
+    width: 36px;
 }
 
-.card__content__dos .logoGhostNumber {
+.logoGhostNumber img {
+    width: 40px;
+}
+
+.logoGhostNumber {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -188,7 +193,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: auto;
     height: 100%;
     padding: 20px;
     box-sizing: border-box;
@@ -203,7 +208,7 @@
 }
 
 .card__description__dos {
-    margin: 10px 0 10px;
+    margin: 34px 4px 37px;
     font-size: .9rem;
     color: white;
     line-height: 1.4;
@@ -305,10 +310,11 @@
 }
 
 .card__description__tres {
-    margin: 10px 0 10px;
-    font-size: .9rem;
+    margin-bottom: 2.3rem;
+    font-size: 1rem;
     color: white;
-    line-height: 1.4;
+    line-height: 1;
+    width: 100%;
 }
 
 .card__botton__tres {
@@ -397,7 +403,7 @@
     transform: rotateX(0deg);
 }
 
-.card__container__cuatro__img{
+.card__container__cuatro__img {
     background: rgba(0, 0, 0, 0.041);
     border-radius: 50px;
     padding: 1rem;
