@@ -27,7 +27,7 @@ btn.addEventListener('click', function() {
 });
 
 /*Alert_Formulario*/
-document.getElementById('btn_Submit').onclick = function () {
+document.getElementById('btn_submit').onclick = function () {
     Swal.fire({
         position: "bottom-start",
         icon: "success",

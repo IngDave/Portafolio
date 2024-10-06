@@ -154,7 +154,7 @@
 .card__dos {
     margin: .5rem;
     position: relative;
-    width: 27rem;
+    width: 33rem;
     aspect-ratio: 16/9;
     border-radius: 10px;
     display: flex;
@@ -176,6 +176,10 @@
 
 .card__botton__dos img {
     width: 36px;
+}
+
+.card__botton__dos .images{
+    margin-left: 10rem;
 }
 
 .logoGhostNumber img {
@@ -200,7 +204,8 @@
     transform: rotateX(-90deg);
     transform-origin: bottom;
     transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: var(--bg-card-dos)
+    background: var(--bg-card-dos);
+    text-align: center;
 }
 
 .card__dos:hover .card__content__dos {
@@ -209,7 +214,7 @@
 
 .card__description__dos {
     margin: 34px 4px 37px;
-    font-size: .9rem;
+    font-size: 1.3rem;
     color: white;
     line-height: 1.4;
 }
@@ -261,7 +266,7 @@
 .card__tres {
     margin: .5rem;
     position: relative;
-    width: 27rem;
+    width: 33rem;
     aspect-ratio: 16/9;
     border-radius: 10px;
     display: flex;
@@ -284,7 +289,8 @@
     transform: rotateX(-90deg);
     transform-origin: bottom;
     transition: .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    background: var(--bg-card-tres)
+    background: var(--bg-card-tres);
+    text-align: center;
 }
 
 .card__tres:hover .card__content__tres {
@@ -306,12 +312,12 @@
 }
 
 .card__content__tres img {
-    width: 30px;
+    width: 35px;
 }
 
 .card__description__tres {
-    margin-bottom: 2.3rem;
-    font-size: 1rem;
+    padding: 1rem 1rem;
+    font-size: 1.3rem;
     color: white;
     line-height: 1;
     width: 100%;
@@ -329,7 +335,7 @@
 }
 
 .card__botton__tres .images {
-    margin-left: 3rem;
+    margin-left: 10rem;
 }
 
 .button__tres {
@@ -368,7 +374,7 @@
 .card__cuatro {
     margin: .5rem;
     position: relative;
-    width: 27rem;
+    width: 33rem;
     aspect-ratio: 16/9;
     border-radius: 10px;
     display: flex;
@@ -421,10 +427,10 @@
 
 .card__description__cuatro {
     margin: 10px 0 10px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #ffffff;
     line-height: 1.4;
-    padding: .5rem .8rem;
+    padding: 2rem .8rem;
 }
 
 .card__button__cuatro {

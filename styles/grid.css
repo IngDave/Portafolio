@@ -169,10 +169,9 @@ header {
 */
 footer {
     padding: .5em;
-    background: #004d84;
+    background: #00000042;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     font-family: var(--Varela);
 
 }

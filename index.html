@@ -226,7 +226,7 @@
                                 <button class="button__tres"><a
                                         href="https://ingdave.github.io/EncryptMaster">Demo</a></button>
                                 <button class="button__tres secondary"><a
-                                        href="https://github.com/IngDave/EncryptMaster.git">Ver Codigo</a></button>
+                                        href="https://github.com/IngDave/EncryptMaster.git">Codigo</a></button>
                                 <div class="images">
                                     <img src="picture/tecnologies/html5.png" alt="html5 logo">
                                     <img src="picture/tecnologies/css3.png" alt="css3 logo">
@@ -259,27 +259,30 @@
 
         <section id="contact" class="contact">
             <div class="form__Contenido">
-                <h1>Contactame y trabajemos juntos</h1>
+                <h1>No dudes en contactarme si buscas un profesional que aporte valor a tus proyectos con soluciones
+                    optimizadas y escalables.</h1>
                 <div class="contact__card">
-                    <span class="title">Leave a Comment</span>
-                    <form class="form">
+                    <form class="form" action="https://formsubmit.co/188418b3c0d46c9677b5396cf6a38bc2" method="POST">
                         <div class="group">
-                            <input placeholder="‎" type="text" required="">
-                            <label for="name">Name</label>
+                            <input id="name" placeholder="‎" type="text" name="Nombre o Empresa:" required="">
+                            <label for="name">Nombre</label>
                         </div>
                         <div class="group">
-                            <input placeholder="‎" type="email" id="email" name="email" required="">
+                            <input  id="email" placeholder="‎" type="email" name="Correo Remitente:"  required="">
                             <label for="email">Email</label>
                         </div>
                         <div class="group">
-                            <textarea placeholder="‎" id="comment" name="comment" rows="5" required=""></textarea>
-                            <label for="comment">Comment</label>
+                            <textarea id="coments" placeholder="‎" name="Comentarios:" rows="5" required=""></textarea>
+                            <label for="comment">Comentarios</label>
                         </div>
-                        <button type="submit">Submit</button>
+                        <button id="btn_submit" type="submit">Enviar</button>
+
+                        <input type="hidden" name="_next" value="https://ingdave.github.io/Portafolio/#contact" />
+                        <input type="hidden" name="_captcha" id="name" value="false" />
                     </form>
                 </div>
-
-                <!--<form action="https://formsubmit.co/188418b3c0d46c9677b5396cf6a38bc2" method="POST">
+            </div>
+            <!--<form action="https://formsubmit.co/188418b3c0d46c9677b5396cf6a38bc2" method="POST">
                     Consumir api para el form aqui
 
                     <label for="name">Nombre</label>
@@ -300,12 +303,12 @@
                     <input type="hidden" name="_next" value="https://ingdave.github.io/Portafolio/#contact" />
                     <input type="hidden" name="_captcha" id="name" value="false" />
                 </form>-->
-            </div>
+
         </section>
         <footer>
             <div class="social_icon">
                 <li class="fa-solid fa-copyright"></li>
-                <p>Copyright - IDaveCoder - 2024</p>
+                <p>Copyright - IngDave - 2024</p>                                                                                                                                                                                                                                                 
             </div>
 
         </footer>
