@@ -12,22 +12,9 @@ function efectoTextTyping(elemento, texto, i = 0) {
 }
 efectoTextTyping(div, about__script__Texto);
 
-//evento que permite abrir campos de texto:
-const mostrarTexto = document.getElementById('mostrar__parrafo');
-const btn = document.getElementById('.container__services__btn');
 
-btn.addEventListener('click', function() {
-    if (mostrarTexto.style.display === 'none' || mostrarTexto.style.display === '') {
-        mostrarTexto.style.display = 'block';
-        btn.textContent = 'Ocultar párrafo';
-    } else {
-        mostrarTexto.style.display = 'none';
-        btn.textContent = 'Mostrar párrafo';
-    }
-});
-
-/*Alert_Formulario*/
-document.getElementById('btn_submit').onclick = function () {
+/*Alert_Formulario
+document.getElementById('enviarFormulario').onclick = function () {
     Swal.fire({
         position: "bottom-start",
         icon: "success",
@@ -40,4 +27,27 @@ document.getElementById('btn_submit').onclick = function () {
         toast: true
     })
 }
+*/
 
+// Escuchar el evento 'submit' del formulario
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Evitar el comportamiento predeterminado (recargar la página)
+    
+    // Mostrar la alerta de SweetAlert
+    Swal.fire({
+        position: "bottom",
+        icon: "success",
+        title: "Mensaje enviado",
+        text: "¡Tu mensaje ha sido enviado con éxito!",
+        showConfirmButton: false,
+        timer: 2800,
+        timerProgressBar: true,
+        backdrop: true,
+        toast: true
+    });
+    
+    // Enviar el formulario después de mostrar la alerta
+    setTimeout(() => {
+        this.submit(); // Reanuda el envío del formulario después de la alerta
+    }, 2600); // Ajustar el tiempo para que coincida con el temporizador de la alerta
+});
