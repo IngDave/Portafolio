@@ -128,10 +128,16 @@
 }
 
 /*smartphones*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
     .contact__card {
         width: 24rem;
     }
 
+}
+
+@media screen and (max-width: 380px) {
+    .contact__card {
+        width: 18rem;
+    }
 }

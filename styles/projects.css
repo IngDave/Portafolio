@@ -528,5 +528,15 @@
 
 /*smartphones*/
 @media screen and (max-width: 768px) {
+    .card__dos {
+        width: 22rem;
+    }
 
+    .card__tres {
+        width: 22rem;
+    }
+
+    .card__cuatro {
+        width: 22rem;
+    }
 }
