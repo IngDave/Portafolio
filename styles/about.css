@@ -156,3 +156,59 @@ ul {
 }
 
 
+/*tablets*/
+@media screen and (max-width: 1024px) {
+
+    .container__about__script__Texto {
+        font-size: 1.7rem;
+    }
+
+    .container__about__text__Dos {
+        font-size: 1.4em;
+        padding-left: 0;
+    }
+
+    .container__about__img__Perfil {
+        height: 46dvh;
+    }
+
+}
+
+/*smartphones*/
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 45dvh;
+    }
+    
+    .navbar__container {
+        display: none;
+    }
+
+    .mostrar__mobile{
+        display: flex;
+    }
+
+    .navbar__container__home {
+        padding-left: 1rem;
+        padding-right: 6rem;
+    }
+    
+    .container__about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container__about__img__Perfil {
+        height: 15dvh;
+        display: flex;
+    }
+
+    .container__about__text__Uno {
+        text-align: center;
+    }
+    
+}

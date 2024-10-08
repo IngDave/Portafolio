@@ -54,98 +54,10 @@
     font-size: 1.3rem;
 }
 
-.container__info p{
+.container__info p {
     margin: 1.5rem;
     font-size: 1.3rem;
 }
-
-
-
-
-
-/*
-.container__services__btn {
-    background: #e44d26;
-    color: white;
-    border: 0;
-    border-radius: .5em;
-    font-family: var(--Varela);
-    transition: all .2s ease;
-    padding: .5em 1em .5em 1em;
-    font-size: .8em;
-}
-
-.container__services__btn:hover {
-    background: #ff4010;
-    transform: translateY(-3px);
-}
-
-.container__services__btn1 {
-    background: #0277bd;
-    color: white;
-    border: 0;
-    border-radius: .5em;
-    font-family: var(--Varela);
-    transition: all .2s ease;
-    padding: .5em 1em .5em 1em;
-    font-size: .8em;
-}
-
-.container__services__btn1:hover {
-    background: #039ae5;
-    transform: translateY(-3px);
-
-}
-
-.container__services__btn2 {
-    background: #ffec25;
-    color: black;
-    border: 0;
-    border-radius: .5em;
-    font-family: var(--Varela);
-    transition: all .2s ease;
-    padding: .5em;
-    font-size: .8em;
-}
-
-.container__services__btn2:hover {
-    background: #fff158;
-    transform: translateY(-3px);
-
-}
-
-.container__services__btn3 {
-    background: #341464;
-    color: white;
-    border: 0;
-    border-radius: .5em;
-    font-family: var(--Varela);
-    transition: all .2s ease;
-    padding: .5em 1em .5em 1em;
-    font-size: .8em;
-}
-
-.container__services__btn3:hover {
-    background: #6629c3;
-    transform: translateY(-3px);
-}
-
-.container__services__btn4 {
-    background: #136d94;
-    color: white;
-    border: 0;
-    border-radius: .5em;
-    font-family: var(--Varela);
-    transition: all .3s ease;
-    padding: .5em 1em .5em 1em;
-    font-size: .9em;
-}
-
-.container__services__btn4:hover {
-    background: #f8e757;
-    color: #000000;
-    transform: translateY(-3px);
-}*/
 
 .container__services__Img__pyg {
     height: 6em;
@@ -172,4 +84,75 @@
 
 .container__services__aprendiendo__Img {
     height: 4rem;
+}
+
+/*laptops medianas*/
+@media screen and (max-width: 1366px) {
+
+    .container__info p {
+        margin: .8rem;
+        font-size: .9rem;
+    }
+
+    .container__info {
+        font-size: .8rem;
+    }
+
+    .container__services__Title {
+        padding: .2em 0em 1em 0em;
+        font-size: 1.5em;
+    }
+
+    .container__services__Img__pyg {
+        height: 4em;
+    }
+
+    .container__services__Img {
+        height: 4em;
+    }
+
+    .container__services__title__aprendiendo {
+        padding: 1.5em 0em .5em;
+    }
+
+    .container__services__aprendiendo__Img {
+        height: 3rem;
+    }
+
+}
+
+/*smartphones*/
+@media screen and (max-width: 768px) {
+
+    .container__services {
+        height: 105dvh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .container__services__data {
+        margin-top: 0rem;
+    }
+
+    .container__services__devWeb {
+        border-radius: .7em;
+        padding-top: 1rem;
+        height: auto;
+        width: auto;
+    }
+
+    .container__info p {
+        margin: 0;
+        padding-top: 1rem;
+        font-size: 0.7rem;
+    }
+
+    .container__services__Title {
+        padding: 1.2em 0em .5em 0em;
+    }
+
+    .container__services__container__dos {
+        gap: .5em;
+        padding: .5rem .5rem;
+    }
 }

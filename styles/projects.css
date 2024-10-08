@@ -178,7 +178,7 @@
     width: 36px;
 }
 
-.card__botton__dos .images{
+.card__botton__dos .images {
     margin-left: 10rem;
 }
 
@@ -463,4 +463,70 @@
     background: transparent;
     color: rgb(39, 2, 2);
     border: transparent;
+}
+
+@media screen and (max-width: 1366px) {
+    
+    .projects{
+        height: 95dvh;
+    }
+
+    .projects__items {
+        margin: 0rem;
+    }
+
+    .card__dos {
+        width: 25rem;
+    }
+
+    .card__botton__dos .images {
+        margin-left: 2rem;
+    }
+
+    .card__tres {
+        width: 25rem;
+    }
+
+    .card__botton__tres .images {
+        margin-left: 2rem;
+    }
+
+    .card__cuatro {
+        width: 25rem;
+    }
+
+    .card__description__dos {
+        margin: 0px 0px 9px;
+        font-size: 1.1rem;
+    }
+
+    .card__description__tres {
+        margin: 0;
+        font-size: 1.3rem;
+    }
+
+    .card__description__cuatro {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        padding: .2rem;
+    }
+
+    .card__botton__dos {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 0rem;
+    }
+
+    .projects h1 {
+        font-size: 2.5rem;
+        margin-top: 8.5rem;
+    }
+
+
+}
+
+/*smartphones*/
+@media screen and (max-width: 768px) {
+
 }

@@ -45,15 +45,15 @@ section {
     height: 100dvh;
 }
 
-
-/* The sidebar menu*/
-/*fin de sidenav*/
-
 .container {
     /* contenedor de paginas*/
     display: flex;
     flex-direction: column;
 
+}
+
+.mostrar__mobile{
+    display: none;
 }
 
 .navbar {
@@ -97,7 +97,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 50px;
-    margin:0 3rem;
+    margin: 0 3rem;
 
 }
 
@@ -127,46 +127,6 @@ section {
     transition: all .2s ease;
 }
 
-
-
-
-
-/*
-header {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar__items {
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.336);
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    font-family: var(--SulphurPoint);
-    padding: .5rem 1rem;
-}
-
-
-.navbar__items a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-    padding: .5rem 1.5rem .5rem 1.5rem;
-    background-color:#183046;
-    border-radius: 15px;
-    
-}
-
-.navbar__items a:hover {
-    
-    color: white;
-    padding: .5rem 2rem .5rem 2rem;
-    
-    transition: all .5s ease;
-    
-}
-*/
 footer {
     padding: .5em;
     background: #00000042;
