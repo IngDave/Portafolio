@@ -2,6 +2,7 @@
 .container__services {
     font-family: var(--Varela);
     display: flex;
+    border: 1px solid greenyellow;
 }
 
 .container__services__data {
@@ -89,34 +90,48 @@
 /*laptops medianas*/
 @media screen and (max-width: 1366px) {
 
+    .container__services__data{
+        padding-top: 2rem;
+    }
+
     .container__info p {
-        margin: .8rem;
-        font-size: .9rem;
+        margin: .5rem;
+        font-size: 1.2rem;
+        padding-top: .7rem;
     }
 
     .container__info {
         font-size: .8rem;
     }
 
+    .container__info h3{
+        font-size: 1.2rem;
+    }
+
+
     .container__services__Title {
-        padding: .2em 0em 1em 0em;
-        font-size: 1.5em;
+        padding: .2rem 0rem .7rem 0rem;
+        font-size: 1.5rem;
     }
 
     .container__services__Img__pyg {
-        height: 4em;
+        height: 5rem;
     }
 
     .container__services__Img {
-        height: 4em;
+        height: 5rem;
     }
 
     .container__services__title__aprendiendo {
-        padding: 1.5em 0em .5em;
+        padding: 3.2rem 0rem 1.9rem 0rem;
     }
 
     .container__services__aprendiendo__Img {
         height: 3rem;
+    }
+
+    .container__services__aprendiendo h3 {
+        font-size: 1.4rem;
     }
 
 }
@@ -167,58 +182,61 @@
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
+
+    .container__services__devWeb {
+        padding: .4rem .3em;
+      
+    }
+
+    .container__services__data {
+        padding-top: 0rem;
+        margin-top: 1.3rem;
+    }
 
     .container__services {
-        height: 96dvh;
+        height: 100dvh;
     }
 
     .container__services__container__uno {
-        padding-bottom: .5;
+        padding-bottom: 1.5;
     }
 
     .container__info {
         padding-top: 0rem;
     }
 
-    .container__services__data {
-        margin-top: 1.3rem;
-    }
-
     .container__services__Title {
         font-size: 1.2em;
-    }
-
-    .container__services__data {
         margin-top: .3rem;
-    }
-
-    .container__services__Title {
-        padding: .4em 0em .5em 0em;
+        padding: 1rem 0rem .5rem 0rem;
     }
 
     .container__services__title__aprendiendo {
-        padding: .5em 0em .5em;
+        padding: 1rem 0rem 1rem 0rem;
         font-size: 1rem;
     }
 
     .container__info p {
-        padding-top: .3rem;
+        padding-top: .6rem;
     }
 
     .container__services__devWeb h3 {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     .container__services__aprendiendo__Img {
-        height: 1.5rem;
+        height: 2.5rem;
+    }
+
+
+    .container__services__aprendiendo h3 {
+        font-size: 1rem;
     }
 
     .container__services__Img {
-        height: 2.5em;
+        height: 3.5rem;
     }
 
-    .container__services__aprendiendo h3{
-        font-size: .8rem;
-    }
+
 }

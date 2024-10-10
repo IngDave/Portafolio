@@ -466,9 +466,13 @@
 }
 
 @media screen and (max-width: 1366px) {
-    
-    .projects{
+
+    .projects {
         height: 95dvh;
+    }
+
+    .projects__main {
+        gap: 0;
     }
 
     .projects__items {
@@ -476,7 +480,7 @@
     }
 
     .card__dos {
-        width: 25rem;
+        width: 20rem;
     }
 
     .card__botton__dos .images {
@@ -484,7 +488,7 @@
     }
 
     .card__tres {
-        width: 25rem;
+        width: 20rem;
     }
 
     .card__botton__tres .images {
@@ -492,7 +496,7 @@
     }
 
     .card__cuatro {
-        width: 25rem;
+        width: 20rem;
     }
 
     .card__description__dos {
@@ -523,8 +527,59 @@
         margin-top: 8.5rem;
     }
 
+    .card__dos .image__logoNameGhostNumber {
+        width: 260px;
+    }
+
+    .logoGhostNumber img {
+        width: 30px;
+    }
 
 }
+
+@media screen and (max-width: 1280px) {
+
+
+    .container__info {
+        padding-top: 0rem;
+        font-size: 1.1rem;
+    }
+
+    .projects h1 {
+        font-size: 1.5rem;
+        margin-top: 6.5rem;
+    }
+
+    .card__dos {
+        width: 24rem;
+    }
+
+    .card__tres {
+        width: 24rem;
+    }
+
+    .card__cuatro {
+        width: 24rem;
+    }
+
+    .card__botton__dos .images {
+        margin-left: 1rem;
+    }
+
+    .card__botton__tres .images {
+        margin-left: 1rem;
+    }
+
+    .container__info p {
+        margin: 0.3rem;
+        font-size: 1rem;
+        padding-top: 0.2rem;
+    }
+
+
+
+}
+
 
 /*smartphones*/
 @media screen and (max-width: 768px) {
@@ -538,5 +593,41 @@
 
     .card__cuatro {
         width: 22rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .card__description__dos {
+        font-size: 1rem;
+    }
+
+    .card__description__tres {
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+
+    .card__description__cuatro {
+        font-size: 1rem;
+    }
+
+    .card__botton__dos .images {
+        margin-left: 0rem;
+    }
+
+    .card__botton__tres .images {
+        margin-left: 0rem;
+    }
+
+    .card__content__dos {
+        padding: 12px;
+    }
+
+    .card__content__tres {
+        padding: 12px;
+    }
+
+    .projects h1 {
+        font-size: 2.5rem;
+        margin-top: 6.5rem;
     }
 }

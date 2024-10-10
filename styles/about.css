@@ -32,7 +32,6 @@
       text-align: left;
       font-family: var(--Jost);
       padding-bottom: 2rem;
-      padding-left: 1.5rem;
   }
 
 
@@ -172,6 +171,7 @@
           height: 46dvh;
       }
 
+
   }
 
   /*smartphones*/
@@ -229,7 +229,7 @@
       }
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 450px) {
 
       .container__about__text__Uno {
           padding-top: 1rem;

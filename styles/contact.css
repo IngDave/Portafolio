@@ -116,14 +116,29 @@
 
 @media screen and (max-width: 1366px) {
 
+    .contact__card {
+        width: 50%;
+        height: 100%;
+    }
+
     .form__Contenido {
-        padding: 6rem 1rem;
+        display: flex;
+        padding: 5rem 3rem;
     }
 
     .form__Contenido h1 {
-        font-size: 1.5rem;
-        padding-bottom: 2rem;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
     }
+
+    .form .group textarea {
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 1366px) {
+    
 
 }
 
@@ -136,8 +151,22 @@
 
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 450px) {
     .contact__card {
-        width: 18rem;
+        width: 38dvh;
+        height: 40dvh;
+        margin-top: 2rem;
     }
+
+    .form__Contenido {
+        display: flex;
+        padding: 0;
+        margin-top: 6rem;
+    }
+
+    .form__Contenido h1 {
+        font-size: 1.2rem;
+        padding: 3rem 2rem;
+    }
+
 }
