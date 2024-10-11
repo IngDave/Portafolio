@@ -546,20 +546,20 @@
     }
 
     .projects h1 {
-        font-size: 1.5rem;
-        margin-top: 6.5rem;
+        font-size: 2.5rem;
+        margin-top: 7.5rem;
     }
 
     .card__dos {
-        width: 24rem;
+        width: 30rem;
     }
 
     .card__tres {
-        width: 24rem;
+        width: 30rem;
     }
 
     .card__cuatro {
-        width: 24rem;
+        width: 30rem;
     }
 
     .card__botton__dos .images {
@@ -570,19 +570,25 @@
         margin-left: 1rem;
     }
 
-    .container__info p {
-        margin: 0.3rem;
-        font-size: 1rem;
-        padding-top: 0.2rem;
+    .card__description__dos {
+        margin: 0px 0px 12px;
+        font-size: 1.3rem;
     }
 
+    .card__description__tres {
+        margin: 10px;
+        font-size: 1.5rem;
+    }
+
+
+    
 
 
 }
 
 
 /*smartphones*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 920px) {
     .card__dos {
         width: 22rem;
     }

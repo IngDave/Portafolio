@@ -1,33 +1,37 @@
 .contact {
-    height: 95dvh;
+    min-height: 95vh; /* Cambiado a min-height */
 }
 
 .form__Contenido h1 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 10rem;
-    font-family: var(--SulphurPoint);
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 2rem;
+        padding-bottom: 2rem; /* Reducido para mejor ajuste en pantallas más pequeñas */
+        font-family: var
 }
 
 .form__Contenido {
     display: flex;
-    padding: 5rem 24rem;
+    padding: 5rem 2rem; /* Reducido para mejor ajuste en pantallas más pequeñas */
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%; /* Ajuste para hacerlo más flexible */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
 }
 
 
 .contact__card {
     border-radius: 10px;
     padding: 1.2rem;
-    width: 35rem;
-    height: 25rem;
+    width: 90%; /* Ajuste para hacerlo más flexible */
+    max-width: 35rem; /* Limita el ancho máximo */
+    height: auto; /* Ajustado a auto para que se adapte al contenido */
     display: flex;
     flex-direction: column;
     background-color: white;
+    margin: 0 auto; /* Centrado automático */
 
 }
 
@@ -123,7 +127,7 @@
 
     .form__Contenido {
         display: flex;
-        padding: 5rem 3rem;
+        padding: 5rem 1rem;
     }
 
     .form__Contenido h1 {
@@ -137,13 +141,22 @@
 
 }
 
-@media screen and (max-width: 1366px) {
-    
+@media screen and (max-width: 1280px) {
+    .contact__card {
+        width: 56%;
+        height: auto;
+    }
+
+    .form__Contenido h1 {
+        font-size: 2.3rem;
+        padding-bottom: 9rem;
+    }
+
 
 }
 
 /*smartphones*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 
     .contact__card {
         width: 24rem;
@@ -153,8 +166,8 @@
 
 @media screen and (max-width: 450px) {
     .contact__card {
-        width: 38dvh;
-        height: 40dvh;
+        width: 40dvh;
+        height: 45dvh;
         margin-top: 2rem;
     }
 
@@ -165,7 +178,7 @@
     }
 
     .form__Contenido h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 3rem 2rem;
     }
 

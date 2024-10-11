@@ -3,6 +3,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      max-width: 1920px;
   }
 
   .container__about__Texto {
@@ -156,7 +157,7 @@
 
 
   /*tablets*/
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1280px) {
 
       .container__about__script__Texto {
           font-size: 1.7rem;
@@ -168,14 +169,14 @@
       }
 
       .container__about__img__Perfil {
-          height: 46dvh;
+          height: 34dvh;
       }
 
 
   }
 
   /*smartphones*/
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1024px) {
 
       .navbar {
           position: fixed;

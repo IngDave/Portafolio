@@ -2,6 +2,8 @@
 .container__services {
     font-family: var(--Varela);
     display: flex;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
 .container__services__data {
@@ -10,6 +12,7 @@
     flex-direction: column;
     margin-top: 5rem;
     height: auto;
+    box-sizing: border-box;
 }
 
 .container__services__Title {
@@ -27,16 +30,18 @@
 }
 
 .container__services__devWeb {
-    margin-left: .3em;
-    margin-right: .3em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #0000003d;
-    border-radius: .7em;
-    padding: 1rem 1em;
-    height: 37dvh;
-    width: auto;
+
+        margin: .3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #0000003d;
+        border-radius: .7em;
+        padding: 1rem 1em;
+        height: auto; /* Ajustado a auto para flexibilidad */
+        width: calc(100% - 2rem); /* Ajuste de ancho */
+        max-width: 30rem; /* Limitar el ancho máximo */
+        box-sizing: border-box;
 }
 
 .container__services__Img {
@@ -52,6 +57,7 @@
     text-align: center;
     padding-top: 1rem;
     font-size: 1.3rem;
+    box-sizing: border-box;
 }
 
 .container__info p {
@@ -62,11 +68,14 @@
 .container__services__Img__pyg {
     height: 6em;
     padding-bottom: .5em;
+    box-sizing: border-box;
 }
 
 .container__services__title__aprendiendo {
     padding: 4.5em 0em .5em;
     text-align: center;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .container__services__container__dos {
@@ -78,12 +87,16 @@
     text-align: center;
     background: #0000003d;
     border-radius: .7em;
-    padding: 1.5em 3em 1.5em 3em;
+    padding: 1.5em 3em;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 
 }
 
 .container__services__aprendiendo__Img {
     height: 4rem;
+    box-sizing: border-box;
 }
 
 /*laptops medianas*/
@@ -135,13 +148,32 @@
 
 }
 
+
+@media screen and (max-width: 1280px) {
+
+    .container__info p {
+        font-size: 1.5rem;
+    }
+
+    .container__services__Title {
+        padding: .2rem 0rem 1.7rem 0rem;
+        font-size: 2rem;
+    }
+
+    .container__services__devWeb h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
 /*smartphones*/
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
 
     .container__services {
-        height: 105dvh;
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     .container__services__data {
@@ -149,10 +181,11 @@
     }
 
     .container__services__devWeb {
-        border-radius: .7em;
-        padding-top: .5rem;
-        height: 97%;
-        width: 97%;
+    
+            border-radius: .7em;
+            padding-top: .5rem;
+            height: auto;
+            width: 97%;
     }
 
     .container__services__Img {
