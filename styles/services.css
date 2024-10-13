@@ -10,8 +10,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
     height: auto;
+    width: 100dvh;
     box-sizing: border-box;
 }
 
@@ -31,17 +32,20 @@
 
 .container__services__devWeb {
 
-        margin: .3em;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: #0000003d;
-        border-radius: .7em;
-        padding: 1rem 1em;
-        height: auto; /* Ajustado a auto para flexibilidad */
-        width: calc(100% - 2rem); /* Ajuste de ancho */
-        max-width: 30rem; /* Limitar el ancho máximo */
-        box-sizing: border-box;
+    margin: .3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #0000003d;
+    border-radius: .7em;
+    padding: 0.5rem 0em;
+    height: auto;
+    /* Ajustado a auto para flexibilidad */
+    width: calc(100% - 2rem);
+    /* Ajuste de ancho */
+    max-width: 30rem;
+    /* Limitar el ancho máximo */
+    box-sizing: border-box;
 }
 
 .container__services__Img {
@@ -55,7 +59,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 1rem;
+    padding-top: .2rem;
     font-size: 1.3rem;
     box-sizing: border-box;
 }
@@ -101,22 +105,25 @@
 
 /*laptops medianas*/
 @media screen and (max-width: 1366px) {
+    .container__services__devWeb {
+        padding: 0.5rem 1em;
+    }
 
-    .container__services__data{
+    .container__services__data {
         padding-top: 2rem;
     }
 
     .container__info p {
-        margin: .5rem;
-        font-size: 1.2rem;
-        padding-top: .7rem;
+        margin: 0rem;
+        font-size: 1rem;
+        padding-top: .3rem;
     }
 
     .container__info {
-        font-size: .8rem;
+        font-size: 0rem;
     }
 
-    .container__info h3{
+    .container__info h3 {
         font-size: 1.2rem;
     }
 
@@ -131,21 +138,25 @@
     }
 
     .container__services__Img {
-        height: 5rem;
+        height: 4rem;
     }
 
     .container__services__title__aprendiendo {
-        padding: 3.2rem 0rem 1.9rem 0rem;
+        padding: 0rem;
     }
 
     .container__services__aprendiendo__Img {
-        height: 3rem;
+        height: 2.5rem;
     }
 
     .container__services__aprendiendo h3 {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
+    .container__services__container__dos {
+        padding: 0.5em 1em;
+        margin-top: 2rem;
+    }
 }
 
 
@@ -181,11 +192,11 @@
     }
 
     .container__services__devWeb {
-    
-            border-radius: .7em;
-            padding-top: .5rem;
-            height: auto;
-            width: 97%;
+
+        border-radius: .7em;
+        padding-top: .5rem;
+        height: auto;
+        width: 97%;
     }
 
     .container__services__Img {
@@ -218,7 +229,7 @@
 
     .container__services__devWeb {
         padding: .4rem .3em;
-      
+
     }
 
     .container__services__data {

@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@237&display=swap');
+
+:root {
+    --background: linear-gradient(90deg, black 2%, #193248 70%, #193248 90%);
+    --background-text: linear-gradient(90deg, #136d94 10%, black 60%, #f0df53 100%);
+    --SulphurPoint: " Sulphur Point", sans-serif;
+    --Varela: "Varela Round", sans-serif;
+    --Jost: "Jost", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: clamp(14px, 2vw, 18px);
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    background: var(--background);
+}
+
+br::selection,
+button::selection,
+textarea::selection,
+input::selection,
+label::selection,
+img::selection,
+p::selection,
+a::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+div::selection,
+strong::selection {
+    display: block;
+}
+
+section {
+    color: white;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+
+}
+
+
+/*
+Móvil pequeño: 360 x 640 px
+Móvil medio: 375 x 667 px
+Smartphone grande: 720 x 1280 px
+Ordenador portátil medio: 1366 x 768 px
+Ordenador de escritorio medio: 1440 x 900 px
+PC de escritorio grande: 1920 x 1080 px
+*/
+
+@media screen and (min-width: 360px) {
+/*barra de navegación*/
+    .navbar {
+        border: 1px solid greenyellow;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background: var(--background);
+        z-index: 999;
+        padding-top: .5rem;
+    }
+
+    .navbar__container__home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        padding-left: .5rem;
+    }
+
+    .navbar__home {
+        display: flex;
+        text-decoration: none;
+        justify-self: center;
+        align-items: center;
+        color: white;
+        padding: .2rem 1rem;
+        border-radius: 15px;
+        transform: translateY(3px);
+        transition: all .2s ease;
+    }
+
+    .navbar__home:hover {
+        display: flex;
+        background-color: #132b3a;
+        align-items: center;
+        padding: .2rem .5rem;
+        border-radius: 15px;
+        transform: translateY(3px);
+        transition: all .2s ease;
+    }
+
+    .navbar__items {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: .5rem 1rem;
+    }
+
+    .mostrar__mobile {
+        padding: .2rem 0rem;
+    }
+
+    .mostrar__mobile:hover {
+        border-radius: 4px;
+        padding: .2rem .5rem;
+        background-color: rgba(0, 0, 0, 0.194);
+        transition: all .2s ease;
+    }
+
+    .navbar__container {
+        display: none;
+    }
+
+    .container {
+        border: 1px solid red;
+    }
+
+    .container img {
+        width: 10%;
+        border: 1px solid red;
+    }
+
+    /*about*/
+    .container__about {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        max-width: 1920px;
+        border: 1px solid blueviolet;
+    }
+
+    .container__about__Texto {
+        margin-right: 5rem;
+        margin-left: 5rem;
+    }
+
+    .container__img__Perfil img{
+        width: 40%;
+    }
+
+  
+
+}
+
+@media screen and (min-width: 375px) {
+
+    .container {
+        border: 1px solid greenyellow;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .container {
+        border: 1px solid white;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .container {
+        border: 1px solid rgb(0, 225, 255);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .container {
+        border: 1px solid rgba(255, 217, 4, 0.987);
+    }
+}
