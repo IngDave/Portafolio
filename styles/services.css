@@ -39,10 +39,8 @@
     background: #0000003d;
     border-radius: .7em;
     padding: 0.5rem 0em;
-    height: auto;
-    /* Ajustado a auto para flexibilidad */
-    width: calc(100% - 2rem);
-    /* Ajuste de ancho */
+    height: auto;     /* Ajustado a auto para flexibilidad */
+    width: calc(100% - 2rem); /* Ajuste de ancho */
     max-width: 30rem;
     /* Limitar el ancho máximo */
     box-sizing: border-box;
