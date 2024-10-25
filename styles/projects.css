@@ -154,7 +154,8 @@
 .card__dos {
     margin: .5rem;
     position: relative;
-    width: 33rem;
+    width: 60%;
+    max-width: 33rem;
     aspect-ratio: 16/9;
     border-radius: 10px;
     display: flex;
@@ -453,7 +454,7 @@
     transition: all 0.1s ease-in-out;
 }
 
-.card__button__cuatro:active {
+.button__cuatro:active {
     box-shadow: 0px 0px 0px 0px color-mix(in oklab, var(--button-accent), black),
         0px 0px 0px 5px rgb(26, 0, 0);
     transform: translateY(5px);
