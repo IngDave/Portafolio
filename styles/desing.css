@@ -350,7 +350,7 @@ ul {
 }
 
 .container__services__aprendiendo {
-    margin-bottom: .4rem;
+    margin-bottom: .6rem;
 }
 
 .container__services__container__dos {
@@ -403,7 +403,7 @@ ul {
 
 .projects h1 {
     font-size: 1.5rem;
-    margin-top: 5rem;
+    margin: 5rem 0 .5rem 0;
 }
 
 .projects__main {
@@ -413,7 +413,7 @@ ul {
     align-items: center;
     box-sizing: border-box;
     flex: 1;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .projects__items {
@@ -594,7 +594,7 @@ ul {
 }
 
 .card__content__tres img {
-    
+
     width: 34px;
     margin-top: .5rem;
 }
@@ -769,38 +769,48 @@ ul {
 /*contacto*/
 
 .contact {
-    min-height: 95vh; /* Cambiado a min-height */
+    min-height: 95vh;
+    /* Cambiado a min-height */
 }
 
 .form__Contenido h1 {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 2rem;
-        padding-bottom: 2rem; /* Reducido para mejor ajuste en pantallas más pequeñas */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    /* Reducido para mejor ajuste en pantallas más pequeñas */
 }
 
 .form__Contenido {
     display: flex;
-    padding: 5rem 2rem; /* Reducido para mejor ajuste en pantallas más pequeñas */
+    padding: 5rem 2rem;
+    /* Reducido para mejor ajuste en pantallas más pequeñas */
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100%; /* Ajuste para hacerlo más flexible */
-    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
+    width: 100%;
+    height: 95dvh;
+    /* Ajuste para hacerlo más flexible */
+    box-sizing: border-box;
+    /* Incluye padding y border en el tamaño total */
 }
 
 
 .contact__card {
     border-radius: 10px;
     padding: 1.2rem;
-    width: 90%; /* Ajuste para hacerlo más flexible */
-    max-width: 35rem; /* Limita el ancho máximo */
-    height: auto; /* Ajustado a auto para que se adapte al contenido */
+    width: 90%;
+    /* Ajuste para hacerlo más flexible */
+    max-width: 35rem;
+    /* Limita el ancho máximo */
+    height: auto;
+    /* Ajustado a auto para que se adapte al contenido */
     display: flex;
     flex-direction: column;
     background-color: white;
-    margin: 0 auto; /* Centrado automático */
+    margin: 0 auto;
+    /* Centrado automático */
 
 }
 
@@ -887,19 +897,64 @@ ul {
 }
 
 /*footer*/
+footer{
+    background-color: rgba(255, 255, 255, 0.137);
+    color: white;
+}
 
+.social_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_icon li{
+    margin: .3rem 1rem;
+}
 
 @media screen and (min-width: 375px) {
 
     .container {
         border: 1px solid greenyellow;
     }
+
+    .container__img__Perfil img {
+        width: 50%;
+    }
+
+    .container__services__container__dos .imagenDos {
+        width: 50px;
+    }
+
+    .container__services__container__dos .imagenUno {
+        width: 42px;
+    }
+
+    .container__services__container__dos .imagenTres {
+        width: 50px;
+    }
+
+    .container__services__aprendiendo {
+        margin-bottom: 1rem;
+    }
+
+    .container__info p {
+       font-size: .85rem;
+    }
+
 }
 
 @media screen and (min-width: 720px) {
     .container {
         border: 1px solid white;
     }
+
+    .text__Strong {
+        font-size: 4.1rem;
+    }
+
+    
+
 }
 
 @media screen and (min-width: 1366px) {
