@@ -1,5 +1,5 @@
 const div = document.querySelector(".text__animado"),
-    text__animado = "Actualizando el portafolio...";
+    text__animado = "Portafolio ⦁ Inicio";
 
 function efectoTextTyping(elemento, texto, i = 0) {
     elemento.textContent += texto[i];
